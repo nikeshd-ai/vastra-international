@@ -62,7 +62,7 @@ const Footer = () => {
                             <h4>REACH US</h4>
 
                             <div className="footer-contact-item d-flex align-items-start">
-                                <img src="public/icons/location.png" alt="" />
+                                <img src="/icons/location.png" alt="" />
 
                                 <p>
                                     Office No. 1, Mukund Siddhi Vinayak Co-op.
@@ -78,7 +78,7 @@ const Footer = () => {
                             </div>
 
                             <div className="footer-contact-item d-flex align-items-center">
-                                <img src="public/icons/call.png" alt="" />
+                                <img src="/icons/call.png" alt="" />
 
                                 <a href="tel:+912240048080">
                                     +91 22 4004 8080
@@ -86,7 +86,7 @@ const Footer = () => {
                             </div>
 
                             <div className="footer-contact-item d-flex align-items-center">
-                                <img src="public/icons/mail.png" alt="" />
+                                <img src="/icons/mail.png" alt="" />
 
                                 <a href="mailto:sales@vastrainternational.com">
                                     sales@vastrainternational.com
