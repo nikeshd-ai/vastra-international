@@ -1,0 +1,19 @@
+.why-strip {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+}
+
+
+
+.why-strip h6 {
+    font-family: var(--eye-brow-font);
+    text-transform: uppercase;
+    font-size: 13px;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+}
+
+.why-strip h5 {
+    font-size: 18px;
+    font-weight: 500;
+}

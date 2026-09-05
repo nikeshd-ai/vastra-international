@@ -1,0 +1,490 @@
+/* =========================================
+   NAVBAR
+========================================= */
+.nav-strip {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    padding: 10px 0;
+}
+
+@media (max-width: 571px) {
+    .nav-strip {
+        display: none;
+    }
+}
+
+.nav-strip .nav-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-strip p {
+    color: #F5F0E8CC;
+    text-transform: uppercase;
+    font-family: var(--big-font);
+}
+
+.nav-strip .nav-details a {
+    color: #F5F0E8CC;
+    text-decoration: none;
+}
+
+.nav-strip .detail {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar {
+    border-bottom: 1px solid #6B1E231A;
+    background-color: var(--bg-white) !important;
+}
+
+.navbar-brand h1 {
+    color: var(--bg-dark);
+}
+
+.navbar .navbar-nav {
+    gap: 24px;
+}
+
+.navbar .nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 5px;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    background-color: #6B1E231A;
+    color: var(--primary-color) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../../../public/icons/menu-bar.png) !important;
+}
+
+
+/* =========================================
+   PRODUCTS DROPDOWN
+========================================= */
+
+.products-dropdown {
+    position: relative;
+}
+
+.products-menu {
+    width: 540px;
+    padding: 25px 20px 0;
+    margin-top: 15px;
+
+    background: #ffffff;
+    border: 1px solid #e5e1d8;
+    border-radius: 0;
+
+    /* No shadow */
+}
+
+
+/* =========================================
+   PRODUCT MENU ITEM
+========================================= */
+
+.product-menu-item {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px;
+
+    color: #252a27;
+    text-decoration: none;
+
+    border-radius: 0;
+
+    transition: background-color 0.2s ease;
+}
+
+.product-menu-item:hover {
+    background-color: #f8f7f3;
+    color: #252a27;
+}
+
+
+/* =========================================
+   PRODUCT MENU CONTENT
+========================================= */
+
+.product-menu-content {
+    padding-right: 30px;
+}
+
+.product-menu-content h6 {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.25;
+
+    color: #252a27;
+}
+
+.product-menu-content p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    color: #68706b;
+}
+
+
+/* =========================================
+   RIGHT ARROW
+========================================= */
+
+.product-menu-arrow {
+    flex-shrink: 0;
+
+    font-size: 35px;
+    font-weight: 300;
+    line-height: 1;
+
+    color: #252a27;
+
+    transition: transform 0.2s ease;
+}
+
+.product-menu-item:hover .product-menu-arrow {
+    transform: translateX(4px);
+}
+
+
+/* =========================================
+   PRODUCT MENU FOOTER
+========================================= */
+
+.product-menu-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-top: 4px;
+    padding: 25px 18px 28px;
+
+    border-top: 1px solid #ddd8cc;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+
+    color: #68706b;
+}
+
+.product-menu-footer a {
+    color: #8c1730;
+
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.product-menu-footer a:hover {
+    color: #6f1025;
+}
+
+
+/* =========================================
+   MOBILE NAVBAR
+   Bootstrap breakpoint: 991.98px
+========================================= */
+
+@media (max-width: 991.98px) {
+
+    /* -----------------------------------------
+       Navbar
+    ----------------------------------------- */
+
+    .navbar {
+        position: relative;
+        z-index: 1050;
+    }
+
+
+    /* -----------------------------------------
+       Navbar Toggler / Hamburger
+    ----------------------------------------- */
+
+    .navbar .navbar-toggler {
+        border: none;
+        outline: none;
+        box-shadow: none;
+
+        padding: 8px;
+    }
+
+    .navbar .navbar-toggler:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+
+
+    /* -----------------------------------------
+       Mobile Menu
+    ----------------------------------------- */
+
+    .navbar .navbar-collapse {
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+
+        padding: 25px 20px;
+
+        background-color: var(--bg-white);
+
+        border-top: 1px solid #6B1E231A;
+
+        /*
+         * Initial position
+         * Menu starts outside the screen
+         * on the right side.
+         */
+        transform: translateX(100%);
+
+        opacity: 0;
+        visibility: hidden;
+
+        /*
+         * Animation
+         */
+        transition:
+            transform 0.45s ease,
+            opacity 0.3s ease,
+            visibility 0.45s ease;
+    }
+
+
+    /* -----------------------------------------
+       Menu Open
+    ----------------------------------------- */
+
+    .navbar .navbar-collapse.show {
+        transform: translateX(0);
+
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    /* -----------------------------------------
+       Navigation List
+    ----------------------------------------- */
+
+    .navbar .navbar-nav {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 5px;
+
+        margin: 0 !important;
+    }
+
+
+    /* -----------------------------------------
+       Navigation Item
+    ----------------------------------------- */
+
+    .navbar .nav-item {
+        width: 100%;
+    }
+
+
+    /* -----------------------------------------
+       Navigation Links
+    ----------------------------------------- */
+
+    .navbar .nav-link {
+        width: 100%;
+
+        padding: 12px 15px;
+
+        font-size: 15px;
+    }
+
+
+    /* -----------------------------------------
+       Request Quote Button
+    ----------------------------------------- */
+
+    .navbar .common-btn {
+        width: 100%;
+
+        margin-top: 15px;
+    }
+
+
+    /* =========================================
+       MOBILE PRODUCTS DROPDOWN
+    ========================================= */
+
+    .products-dropdown {
+        position: relative;
+    }
+
+    .products-menu {
+        position: static !important;
+
+        width: 100%;
+
+        margin-top: 5px;
+
+        padding: 10px 0 0;
+
+        background-color: var(--bg-white);
+
+        border: none;
+        border-radius: 0;
+
+        transform: none !important;
+    }
+
+
+    /* -----------------------------------------
+       Product Item
+    ----------------------------------------- */
+
+    .product-menu-item {
+        width: 100%;
+
+        padding: 12px 15px;
+    }
+
+
+    /* -----------------------------------------
+       Product Content
+    ----------------------------------------- */
+
+    .product-menu-content {
+        padding-right: 20px;
+    }
+
+    .product-menu-content h6 {
+        font-size: 14px;
+    }
+
+    .product-menu-content p {
+        font-size: 12px;
+    }
+
+
+    /* -----------------------------------------
+       Product Arrow
+    ----------------------------------------- */
+
+    .product-menu-arrow {
+        font-size: 30px;
+    }
+
+
+    /* -----------------------------------------
+       Product Footer
+    ----------------------------------------- */
+
+    .product-menu-footer {
+        padding: 20px 15px;
+
+        gap: 10px;
+
+        flex-wrap: wrap;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+   767px
+========================================= */
+
+@media (max-width: 767.98px) {
+
+    .navbar .navbar-collapse {
+        padding: 20px 15px;
+    }
+
+    .navbar .nav-link {
+        padding: 11px 12px;
+    }
+
+    .products-menu {
+        padding-top: 5px;
+    }
+
+    .product-menu-item {
+        padding: 11px 12px;
+    }
+
+    .product-menu-content p {
+        font-size: 11px;
+    }
+
+    .product-menu-footer {
+        padding: 18px 12px 20px;
+
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================
+   EXTRA SMALL MOBILE
+   575px
+========================================= */
+
+@media (max-width: 575.98px) {
+
+    .navbar .navbar-collapse {
+        padding: 18px 12px;
+    }
+
+    .navbar .nav-link {
+        padding: 10px 12px;
+    }
+
+    .product-menu-item {
+        padding: 10px 12px;
+    }
+
+    .product-menu-content h6 {
+        font-size: 13px;
+    }
+
+    .product-menu-content p {
+        font-size: 11px;
+    }
+
+    .product-menu-arrow {
+        font-size: 26px;
+    }
+
+    .product-menu-footer {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 6px;
+
+        padding: 16px 12px 18px;
+    }
+}

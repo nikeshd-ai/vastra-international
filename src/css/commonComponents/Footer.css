@@ -1,0 +1,259 @@
+.footer-strip {
+    background-color: var(--bg-dark);
+}
+
+.footer-strip .common-btn {
+    background-color: white;
+    width: 210px;
+}
+
+.footer-strip .common-btn a {
+    color: rgb(0, 0, 0);
+}
+
+.footer-strip .common-title h2 {
+    color: white;
+}
+
+.footer-strip .common-title h6 {
+    color: #F5D8CD;
+}
+
+.footer-strip p {
+    color: #F5D8CD;
+    font-family: var(--big-font);
+}
+
+.footer {
+    background: #eee7d9;
+    color: #514b48;
+}
+
+.footer-main {
+    padding: 85px 6.35% 45px;
+}
+
+/* ================================
+   LOGO / BRAND
+================================ */
+
+.footer-logo {
+    display: inline-block;
+}
+
+.footer-logo img {
+    width: 350px;
+    max-width: 100%;
+    display: block;
+}
+
+.footer-brand p {
+    max-width: 400px;
+    margin: 27px 0 0;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+
+    color: #514b48;
+}
+
+/* ================================
+   COLUMN
+================================ */
+
+.footer-column h4 {
+    margin: 3px 0 25px;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2.8px;
+
+    color: #711b2b;
+}
+
+.footer-column ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 13px;
+}
+
+.footer-column li a {
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.45;
+
+    color: #514b48;
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.footer-column li a:hover {
+    color: #711b2b;
+}
+
+/* ================================
+   CONTACT
+================================ */
+
+.footer-contact-item {
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.footer-contact-item i {
+    flex: 0 0 20px;
+
+    padding-top: 3px;
+
+    font-size: 19px;
+    color: #711b2b;
+}
+
+.footer-contact-item p,
+.footer-contact-item a {
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+
+    color: #514b48;
+    text-decoration: none;
+}
+
+.footer-contact-item a {
+    line-height: 1.4;
+    transition: 0.3s ease;
+}
+
+.footer-contact-item a:hover {
+    color: #711b2b;
+}
+
+/* ================================
+   BOTTOM
+================================ */
+
+.footer-bottom {
+    width: 87.3%;
+    margin: 0 auto;
+
+    padding: 33px 0;
+
+    border-top: 1px solid rgba(81, 75, 72, 0.15);
+}
+
+.footer-bottom p {
+    margin: 0;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    color: #766f6a;
+}
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 991px) {
+
+    .footer-main {
+        padding: 65px 40px 55px;
+    }
+
+    .footer-brand {
+        margin-bottom: 20px;
+    }
+
+    .footer-brand p {
+        max-width: 600px;
+    }
+
+    .footer-bottom {
+        width: calc(100% - 80px);
+    }
+
+    .footer-bottom>div {
+        gap: 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+    }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 767px) {
+
+    .footer-main {
+        padding: 50px 20px 40px;
+    }
+
+    .footer-brand {
+        margin-bottom: 15px;
+    }
+
+    .footer-logo img {
+        width: 260px;
+    }
+
+    .footer-brand p {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .footer-column {
+        margin-top: 10px;
+    }
+
+    .footer-column h4 {
+        margin-bottom: 20px;
+        font-size: 13px;
+        letter-spacing: 2.3px;
+    }
+
+    .footer-column li {
+        margin-bottom: 13px;
+    }
+
+
+    .footer-contact-item {
+        gap: 14px;
+        margin-bottom: 20px;
+    }
+
+    .footer-contact-item i {
+        font-size: 17px;
+    }
+
+
+
+    .footer-bottom {
+        width: calc(100% - 40px);
+        padding: 25px 0 40px;
+    }
+
+    .footer-bottom>div {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 10px;
+    }
+
+    .footer-bottom p {
+        font-size: 13px;
+    }
+}
