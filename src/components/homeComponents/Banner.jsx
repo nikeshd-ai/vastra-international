@@ -19,7 +19,7 @@ const Banner = () => {
                                 <div className="btn-group d-flex gap-3">
                                     <button className="common-btn">
                                         <a href="#">Request a quote</a>
-                                        <img src='public/icons/right_arrow.png' />
+                                        <img src='/icons/right_arrow.png' />
                                     </button>
                                     <button className="common-btn transparent">
                                         <a href="#">Request a quote</a>

@@ -42,7 +42,7 @@ const WhyVastra = () => {
                         </div>
                         <button className="common-btn">
                             <a href="#">Request a quote</a>
-                            <img src='public/icons/right_arrow.png' />
+                            <img src='/icons/right_arrow.png' />
                         </button>
                     </div>
                     <div className="col-lg-8 col-md-8 col-sm-12 col-12">

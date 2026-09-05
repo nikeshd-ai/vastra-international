@@ -13,7 +13,7 @@ const FooterStrip = () => {
                     <p className="mb-4">Tell us what you are looking for. We’ll bring the right questions.</p>
                     <button className="common-btn">
                         <a href="#">Request a quote</a>
-                        <img src='public/icons/black-right-arrow.png' />
+                        <img src='/icons/black-right-arrow.png' />
                     </button>
                 </div>
             </div>
