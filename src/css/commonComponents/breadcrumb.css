@@ -1,0 +1,78 @@
+/* =========================================
+   BREADCRUMB
+========================================= */
+
+.breadcrumb-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin-bottom: 55px;
+}
+
+
+/* Home */
+
+.breadcrumb-home {
+    color: var(--primary-color);
+
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    text-decoration: none;
+}
+
+.breadcrumb-home:hover {
+    color: var(--primary-color);
+}
+
+
+/* Arrow */
+
+.breadcrumb-arrow {
+    color: #8d817d;
+
+    font-size: 24px;
+    font-weight: 300;
+
+    line-height: 1;
+}
+
+
+/* Current Page */
+
+.breadcrumb-current {
+    color: #b28c8c;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767.98px) {
+
+    .breadcrumb-wrapper {
+        gap: 10px;
+        margin-bottom: 35px;
+    }
+
+    .breadcrumb-home,
+    .breadcrumb-current {
+        font-size: 11px;
+        letter-spacing: 1.8px;
+    }
+
+    .breadcrumb-arrow {
+        font-size: 20px;
+    }
+}

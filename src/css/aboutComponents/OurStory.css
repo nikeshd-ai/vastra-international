@@ -1,0 +1,242 @@
+/* =========================================
+   OUR STORY SECTION
+========================================= */
+
+.our-story-section {
+    background-color: var(--bg-white);
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.our-story-left {
+    padding-right: 40px;
+}
+
+.our-story-label {
+    display: inline-block;
+
+    margin-bottom: 40px;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: var(--primary-color);
+}
+
+
+
+
+/* =========================================
+   RIGHT CONTENT
+========================================= */
+
+.our-story-right {
+    padding-left: 30px;
+}
+
+.our-story-right p {
+    margin: 0 0 36px;
+
+    color: #625b57;
+
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.65;
+}
+
+.our-story-right p:last-of-type {
+    margin-bottom: 58px;
+}
+
+
+/* =========================================
+   QUOTE
+========================================= */
+
+.our-story-quote {
+    display: flex;
+    align-items: stretch;
+
+    width: 100%;
+}
+
+
+.our-story-quote-line {
+    flex-shrink: 0;
+
+    width: 3px;
+
+    background-color: var(--primary-color);
+}
+
+
+.our-story-quote-content {
+    padding-left: 35px;
+}
+
+
+.our-story-quote-content blockquote {
+    max-width: 700px;
+
+    margin: 0 0 22px;
+
+    color: var(--bg-dark);
+
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 1.45;
+}
+
+
+.our-story-quote-content span {
+    display: block;
+
+    color: var(--primary-color);
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================
+   LARGE SCREEN
+========================================= */
+
+@media (max-width: 1199.98px) {
+
+
+    .our-story-left {
+        padding-right: 20px;
+    }
+
+    .our-story-right {
+        padding-left: 20px;
+    }
+
+    .our-story-right p {
+        font-size: 19px;
+    }
+
+    .our-story-quote-content blockquote {
+        font-size: 24px;
+    }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991.98px) {
+
+    .our-story-left {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .our-story-label {
+        margin-bottom: 25px;
+    }
+
+
+
+    .our-story-right {
+        padding-left: 0;
+    }
+
+    .our-story-right p {
+        font-size: 18px;
+        line-height: 1.65;
+
+        margin-bottom: 28px;
+    }
+
+    .our-story-right p:last-of-type {
+        margin-bottom: 45px;
+    }
+
+    .our-story-quote-content blockquote {
+        font-size: 23px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 767.98px) {
+
+
+
+    .our-story-label {
+        margin-bottom: 22px;
+
+        font-size: 11px;
+        letter-spacing: 2.5px;
+    }
+
+    .our-story-left {
+        margin-bottom: 40px;
+    }
+
+
+
+    .our-story-right p {
+        font-size: 16px;
+        line-height: 1.7;
+
+        margin-bottom: 25px;
+    }
+
+    .our-story-right p:last-of-type {
+        margin-bottom: 40px;
+    }
+
+    .our-story-quote-line {
+        width: 2px;
+    }
+
+    .our-story-quote-content {
+        padding-left: 20px;
+    }
+
+    .our-story-quote-content blockquote {
+        margin-bottom: 18px;
+
+        font-size: 20px;
+        line-height: 1.45;
+    }
+
+    .our-story-quote-content span {
+        font-size: 10px;
+        letter-spacing: 2.5px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 575.98px) {
+
+
+    .our-story-quote-content {
+        padding-left: 16px;
+    }
+
+    .our-story-quote-content blockquote {
+        font-size: 18px;
+    }
+}

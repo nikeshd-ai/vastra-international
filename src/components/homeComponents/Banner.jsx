@@ -1,5 +1,7 @@
 import React from 'react'
 import BannerStrip from './BannerStrip.jsx'
+import { Link } from "react-router-dom";
+
 
 const Banner = () => {
     return (
@@ -18,12 +20,17 @@ const Banner = () => {
                                 <p>Vastra International is a Mumbai-based garment manufacturer and exporter serving domestic and overseas buyers with formal wear, corporate apparel, uniforms, workwear and casual garments. From product specifications and sourcing to manufacturing and delivery, we support buyers with a dependable B2B apparel supply process.</p>
                                 <div className="btn-group d-flex gap-3">
                                     <button className="common-btn">
-                                        <a href="#">Request a quote</a>
+                                        <Link to="/ReqQuote">
+                                            Request a Quote
+                                        </Link>
                                         <img src='/icons/right_arrow.png' />
                                     </button>
                                     <button className="common-btn transparent">
-                                        <a href="#">Request a quote</a>
+                                        <Link to="/products/Shorts">
+                                            Explore Products
+                                        </Link>
                                     </button>
+
                                 </div>
                             </div>
                         </div>
@@ -36,7 +43,7 @@ const Banner = () => {
                 </div>
 
             </section>
-            <BannerStrip />
+            <BannerStrip image="/banner/banner-strip.png" />
         </>
     )
 }

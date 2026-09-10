@@ -117,6 +117,10 @@
     color: #711b2b;
 }
 
+.footer-contact-item img {
+    width: 20px;
+}
+
 .footer-contact-item p,
 .footer-contact-item a {
     margin: 0;

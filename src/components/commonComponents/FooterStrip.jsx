@@ -1,5 +1,7 @@
 import React from 'react'
 import '../../css/commonComponents/Footer.css'
+import { Link } from "react-router-dom";
+
 
 const FooterStrip = () => {
     return (
@@ -12,7 +14,9 @@ const FooterStrip = () => {
                     </div>
                     <p className="mb-4">Tell us what you are looking for. We’ll bring the right questions.</p>
                     <button className="common-btn">
-                        <a href="#">Request a quote</a>
+                        <Link to="/ReqQuote">
+                            Request a Quote
+                        </Link>
                         <img src='/icons/black-right-arrow.png' />
                     </button>
                 </div>

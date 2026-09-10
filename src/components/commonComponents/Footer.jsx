@@ -47,11 +47,11 @@ const Footer = () => {
 
                             <ul className="list-unstyled">
                                 <li><a href="/">Home</a></li>
-                                <li><a href="/about-us">About us</a></li>
-                                <li><a href="/clients">Clients</a></li>
+                                <li><a href="/about">About us</a></li>
+                                {/* <li><a href="/clients">Clients</a></li> */}
                                 <li><a href="/contact">Contact</a></li>
                                 <li>
-                                    <a href="/request-a-quote">
+                                    <a href="/ReqQuote">
                                         Request a quote
                                     </a>
                                 </li>

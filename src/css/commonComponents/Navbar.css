@@ -7,7 +7,7 @@
     padding: 10px 0;
 }
 
-@media (max-width: 571px) {
+@media (max-width: 761px) {
     .nav-strip {
         display: none;
     }
@@ -23,6 +23,7 @@
     color: #F5F0E8CC;
     text-transform: uppercase;
     font-family: var(--big-font);
+    margin-bottom: 0px;
 }
 
 .nav-strip .nav-details a {
@@ -36,9 +37,18 @@
     gap: 5px;
 }
 
+.nav-strip .detail img {
+    width: 20px;
+}
+
 .navbar {
     border-bottom: 1px solid #6B1E231A;
     background-color: var(--bg-white) !important;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
 }
 
 .navbar-brand h1 {
@@ -487,4 +497,40 @@
 
         padding: 16px 12px 18px;
     }
+}
+
+/* =========================================
+   PRODUCTS HOVER DROPDOWN
+========================================= */
+
+@media (min-width: 992px) {
+
+    .products-dropdown {
+        position: relative;
+    }
+
+    .products-dropdown .products-menu {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 50%;
+
+        width: 540px;
+
+        margin-top: 0;
+
+        transform: translateX(-50%);
+
+        z-index: 1055;
+    }
+
+    .products-dropdown:hover .products-menu {
+        display: block;
+    }
+
+}
+
+.products-link img {
+    width: 20px;
 }

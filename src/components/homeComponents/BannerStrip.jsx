@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const BannerStrip = () => {
+const BannerStrip = ({ image }) => {
     return (
-        <div className="banner-strip">
-            <img src="public/banner/banner-strip.png" alt="" />
+        <div className="banner-strip" style={{ width: "100%" }}>
+            <img src={image} alt="" />
         </div>
-    )
-}
+    );
+};
 
-export default BannerStrip
+export default BannerStrip;
