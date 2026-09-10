@@ -44,7 +44,7 @@
 .navbar {
     border-bottom: 1px solid #6B1E231A;
     background-color: var(--bg-white) !important;
-    position: sticky;
+    position: sticky !important;
     top: 0;
     left: 0;
     right: 0;
