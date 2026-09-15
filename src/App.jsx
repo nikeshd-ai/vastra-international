@@ -1,15 +1,30 @@
 import './App.css'
-import Navbar from './components/commonComponents/Navbar.jsx'
-import Footer from './components/commonComponents/Footer.jsx'
+import { useEffect } from 'react'
 
 import { BrowserRouter, Route, Routes, Outlet } from 'react-router-dom'
+import { useLocation } from "react-router-dom";
 
+
+import Navbar from './components/commonComponents/Navbar.jsx'
+import Footer from './components/commonComponents/Footer.jsx'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import ReqQuote from './components/contactComponents/ReqQuote.jsx'
-import Shorts from './pages/products/Shorts.jsx'
 import ProductDetail from './components/productComponents/ProductDetail.jsx'
+import RequestQuoteModal from "./components/commonComponents/RequestQuoteModal.jsx";
+import ProductPage from './pages/products/ProductPage.jsx';
+
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 
 
 function GlobalWrapper() {
@@ -18,6 +33,7 @@ function GlobalWrapper() {
       <Navbar />
       <Outlet />
       <Footer />
+      <RequestQuoteModal />
     </>
   )
 }
@@ -26,6 +42,7 @@ function GlobalWrapper() {
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
 
       <Routes>
 
@@ -37,11 +54,9 @@ function App() {
 
           <Route path="/contact" element={<Contact />} />
 
-          <Route path="/reqQuote" element={<ReqQuote />} />
+          <Route path="/products/:slug" element={<ProductPage />} />
 
           <Route path="/productdetail" element={<ProductDetail />} />
-
-          <Route path="products/shorts" element={<Shorts />} />
 
         </Route>
 

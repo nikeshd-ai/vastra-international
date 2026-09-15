@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import "../../css/commonComponents/Navbar.css";
 
@@ -96,7 +95,7 @@ const Navbar = () => {
                                 <div className="products-menu">
 
                                     <Link
-                                        to="/products/shorts"
+                                        to="/products/MensBlazer"
                                         className="product-menu-item"
                                     >
                                         <div className="product-menu-content">
@@ -110,7 +109,7 @@ const Navbar = () => {
                                     </Link>
 
                                     <Link
-                                        to="/products/shorts"
+                                        to="/products/MensTrousers"
                                         className="product-menu-item"
                                     >
                                         <div className="product-menu-content">
@@ -124,7 +123,7 @@ const Navbar = () => {
                                     </Link>
 
                                     <Link
-                                        to="/products/shorts"
+                                        to="/products/NehruJacket"
                                         className="product-menu-item"
                                     >
                                         <div className="product-menu-content">
@@ -138,7 +137,7 @@ const Navbar = () => {
                                     </Link>
 
                                     <Link
-                                        to="/products/shorts"
+                                        to="/products/MensTshirt"
                                         className="product-menu-item"
                                     >
                                         <div className="product-menu-content">
@@ -152,7 +151,7 @@ const Navbar = () => {
                                     </Link>
 
                                     <Link
-                                        to="/products/shorts"
+                                        to="/products/LadiesBlazer"
                                         className="product-menu-item"
                                     >
                                         <div className="product-menu-content">
@@ -165,12 +164,16 @@ const Navbar = () => {
                                         <span className="product-menu-arrow">›</span>
                                     </Link>
 
-                                    <div className="product-menu-footer">
+                                    <div className="product-menu-footer" type="button"
+
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#requestQuoteModal">
                                         <span>Need a custom brief?</span>
 
-                                        <Link to="/ReqQuote">
+                                        <span className="red">
                                             Request a quote
-                                        </Link>
+                                        </span>
+
                                     </div>
 
                                 </div>
@@ -199,10 +202,18 @@ const Navbar = () => {
                         </ul>
 
                         {/* Request Quote */}
-                        <button className="common-btn">
+                        {/* <button className="common-btn">
                             <Link to="/ReqQuote">
                                 Request a quote
                             </Link>
+                        </button> */}
+                        <button
+                            type="button"
+                            className="common-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#requestQuoteModal"
+                        >
+                            Request a Quote
                         </button>
                     </div>
                 </div>

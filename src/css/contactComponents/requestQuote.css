@@ -4,15 +4,15 @@
     background: #fff;
     border: 1px solid #d8d0c5;
     border-radius: 8px;
-    padding: 45px;
+    padding: 25px;
 }
 
 .quote-label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     font-family: var(--eye-brow-font);
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 10px;
     color: var(--primary-color);
     letter-spacing: 2px;
 }
@@ -22,7 +22,7 @@
 }
 
 .quote-input {
-    height: 62px;
+    height: 42px;
 
     border: 1px solid #d5d5d5;
     border-radius: 8px;
@@ -37,6 +37,7 @@
 
 .quote-input::placeholder {
     color: #aaa;
+    font-size: 13px;
 }
 
 .quote-input:focus {
@@ -45,6 +46,7 @@
 
 select.quote-input {
     cursor: pointer;
+    font-size: 13px;
 }
 
 
@@ -61,10 +63,12 @@ select.quote-input {
     resize: vertical;
 
     box-shadow: none !important;
+    height: 80px;
 }
 
 .quote-textarea::placeholder {
     color: #aaa;
+    font-size: 13px;
 }
 
 .quote-textarea:focus {
@@ -101,7 +105,7 @@ select.quote-input {
 
 .quote-note {
     color: #817b78;
-    font-size: 16px;
+    font-size: 13px;
 }
 
 
@@ -228,7 +232,7 @@ select.quote-input {
 @media (max-width: 991px) {
 
     .quote-form-box {
-        padding: 30px;
+        padding: 20px;
     }
 
     .quote-process {
@@ -259,9 +263,7 @@ select.quote-input {
         gap: 15px;
     }
 
-    .quote-note {
-        font-size: 14px;
-    }
+
 
     .process-title {
         font-size: 16px;
@@ -279,7 +281,7 @@ select.quote-input {
     }
 
     .quote-label {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .quote-submit-btn {
@@ -290,4 +292,41 @@ select.quote-input {
         padding: 30px 20px;
     }
 
+}
+
+
+/* ================= FORM VALIDATION ================= */
+
+.quote-input-error {
+    border-color: red !important;
+}
+
+.quote-error {
+    display: block;
+    margin-top: 5px;
+    color: #812329;
+    font-size: 12px;
+}
+
+.quote-success {
+    margin-top: 20px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    background: #e9f6ec;
+    color: #24733a;
+    font-size: 14px;
+}
+
+.quote-submit-error {
+    margin-top: 20px;
+    padding: 12px 16px;
+    border-radius: 6px;
+    background: #f9e8e8;
+    color: #812329;
+    font-size: 14px;
+}
+
+.quote-submit-row button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
 }

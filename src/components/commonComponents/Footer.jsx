@@ -1,7 +1,9 @@
-import React from "react";
+
 
 import "../../css/commonComponents/Footer.css";
 import FooterStrip from "./FooterStrip";
+import { Link } from "react-router-dom";
+
 
 const Footer = () => {
     return (
@@ -32,29 +34,26 @@ const Footer = () => {
                             <h4>PRODUCTS</h4>
 
                             <ul className="list-unstyled">
-                                <li><a href="#">Men's Coats</a></li>
-                                <li><a href="#">Blazers</a></li>
-                                <li><a href="#">Formal Shirts</a></li>
-                                <li><a href="#">Casual Trousers</a></li>
-                                <li><a href="#">Cotton T-Shirts</a></li>
-                                <li><a href="#">Shorts</a></li>
-                                <li><a href="#">School & Hospital Uniforms</a></li>
+                                <li><Link to="/products/MensBlazer">Men's Coats</Link></li>
+                                <li><Link to="/products/LadiesBlazer">Blazers</Link></li>
+                                <li><Link to="/products/MensTshirt">Formal Shirts</Link></li>
+                                <li><Link to="/products/MensTrousers">Casual Trousers</Link></li>
+                                <li><Link to="/products/MensTshirt">Cotton T-Shirts</Link></li>
+                                <li><Link to="/products/MensBlazer">Shorts</Link></li>
+                                <li><Link to="/products/MensBlazer">School & Hospital Uniforms</Link></li>
+
                             </ul>
                         </div>
 
                         <div className="col-lg-2 col-md-4 col-sm-6 footer-column">
                             <h4>COMPANY</h4>
 
+
                             <ul className="list-unstyled">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/about">About us</a></li>
-                                {/* <li><a href="/clients">Clients</a></li> */}
-                                <li><a href="/contact">Contact</a></li>
-                                <li>
-                                    <a href="/ReqQuote">
-                                        Request a quote
-                                    </a>
-                                </li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/about">About us</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
+
                             </ul>
                         </div>
 
@@ -64,7 +63,7 @@ const Footer = () => {
                             <div className="footer-contact-item d-flex align-items-start">
                                 <img src="/icons/location.png" alt="" />
 
-                                <p>
+                                {/* <p>
                                     Office No. 1, Mukund Siddhi Vinayak Co-op.
                                     <br />
                                     Housing Society Ltd.
@@ -74,13 +73,18 @@ const Footer = () => {
                                     Malad (East), Mumbai – 400 097,
                                     <br />
                                     Maharashtra, India
-                                </p>
+                                </p> */}
+                                <a href="https://maps.app.goo.gl/M1iRaAH2wfizb8es5" target="_blank" rel="noopener noreferrer">
+                                    <p><strong>Head office: <br /></strong>
+
+                                        Ground Floor, CHS, MULUND SIDDHIVINAYAK, A1, Tata Colony, Mulund East, Maharashtra 400081.</p>
+                                </a>
                             </div>
 
                             <div className="footer-contact-item d-flex align-items-center">
                                 <img src="/icons/call.png" alt="" />
 
-                                <a href="tel:+912240048080">
+                                <a href="tel:+912240048080" target="_blank" >
                                     +91 22 4004 8080
                                 </a>
                             </div>
@@ -88,7 +92,7 @@ const Footer = () => {
                             <div className="footer-contact-item d-flex align-items-center">
                                 <img src="/icons/mail.png" alt="" />
 
-                                <a href="mailto:sales@vastrainternational.com">
+                                <a href="mailto:sales@vastrainternational.com" target="_blank" >
                                     sales@vastrainternational.com
                                 </a>
                             </div>
@@ -106,7 +110,7 @@ const Footer = () => {
                         </p>
 
                         <p>
-                            @design_and_developed by parasightsolutions.com
+                            @design_and_developed by <a href="http://parasightsolutions.com" target="_blank" rel="noopener noreferrer" style={{ color: '#000000' }}>parasightsolutions.com</a>
                         </p>
 
                     </div>

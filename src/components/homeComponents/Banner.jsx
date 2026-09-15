@@ -19,14 +19,24 @@ const Banner = () => {
                                 </div>
                                 <p>Vastra International is a Mumbai-based garment manufacturer and exporter serving domestic and overseas buyers with formal wear, corporate apparel, uniforms, workwear and casual garments. From product specifications and sourcing to manufacturing and delivery, we support buyers with a dependable B2B apparel supply process.</p>
                                 <div className="btn-group d-flex gap-3">
-                                    <button className="common-btn">
+                                    {/* <button className="common-btn">
                                         <Link to="/ReqQuote">
                                             Request a Quote
                                         </Link>
                                         <img src='/icons/right_arrow.png' />
+                                    </button> */}
+                                    <button
+                                        type="button"
+                                        className="common-btn"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#requestQuoteModal"
+                                    >
+                                        Request a Quote
+                                        <img src='/icons/right_arrow.png' />
+
                                     </button>
                                     <button className="common-btn transparent">
-                                        <Link to="/products/Shorts">
+                                        <Link to="/products/MensBlazer">
                                             Explore Products
                                         </Link>
                                     </button>

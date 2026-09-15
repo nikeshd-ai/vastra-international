@@ -23,13 +23,7 @@ const ContactDetails = () => {
                                     <h6>OFFICE & UNIT 1</h6>
 
                                     <p>
-                                        Office No. 1, Mukund Siddhi Vinayak Co-op.
-                                        Housing Society Ltd.
-                                        <br />
-                                        Ground Floor, Tata Colony, Off Nardas Road
-                                        <br />
-                                        Malad (East), Mumbai - 400 097,
-                                        Maharashtra, India
+                                        Ground Floor, CHS, MULUND SIDDHIVINAYAK, A1, Tata Colony, Mulund East, Maharashtra 400081
                                     </p>
                                 </div>
                             </div>
@@ -91,7 +85,7 @@ const ContactDetails = () => {
                                     has pricing in it.
                                 </p>
 
-                                <button
+                                {/* <button
                                     type="button"
                                     className="common-btn mt-3"
 
@@ -99,6 +93,14 @@ const ContactDetails = () => {
                                     <Link to="/ReqQuote">
                                         Request a Quote
                                     </Link>
+                                </button> */}
+                                <button
+                                    type="button"
+                                    className="common-btn"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#requestQuoteModal"
+                                >
+                                    Request a Quote
                                 </button>
 
                             </div>

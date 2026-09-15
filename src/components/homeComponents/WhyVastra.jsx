@@ -40,9 +40,19 @@ const WhyVastra = () => {
                                 buyers tell us made
                                 the difference</h2>
                         </div>
-                        <button className="common-btn">
+                        {/* <button className="common-btn">
                             <a href="#">Request a quote</a>
                             <img src='/icons/right_arrow.png' />
+                        </button> */}
+                        <button
+                            type="button"
+                            className="common-btn"
+                            data-bs-toggle="modal"
+                            data-bs-target="#requestQuoteModal"
+                        >
+                            Request a Quote
+                            <img src='/icons/right_arrow.png' />
+
                         </button>
                     </div>
                     <div className="col-lg-8 col-md-8 col-sm-12 col-12">
