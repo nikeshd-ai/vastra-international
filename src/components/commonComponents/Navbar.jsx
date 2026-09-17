@@ -1,7 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
 import "../../css/commonComponents/Navbar.css";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
+    const location = useLocation();
+
+    const isProductActive =
+        location.pathname.startsWith("/products/") ||
+        location.pathname.startsWith("/productdetail");
     return (
         <>
             <div className="nav-strip">
@@ -41,7 +47,7 @@ const Navbar = () => {
                     {/* Logo */}
                     <Link className="navbar-brand" to="/">
                         <img
-                            src="/logo/vastra_international.png"
+                            src="/logo/logosvg.svg"
                             alt="Vastra International"
                         />
                     </Link>
@@ -82,15 +88,19 @@ const Navbar = () => {
                                     className="nav-link"
                                     to="/about"
                                 >
-                                    About
+                                    About Us
                                 </NavLink>
                             </li>
 
                             {/* Products */}
                             <li className="nav-item products-dropdown">
-                                <span className="nav-link products-link d-flex">
+                                {/* <span className="nav-link products-link d-flex">
                                     Products <img src="/icons/dropdown-arrow.png" alt="" className="pt-1 ps-1" />
-                                </span>
+                                </span> */}
+                                <span
+                                    className={`nav-link products-link d-flex ${isProductActive ? "active" : ""
+                                        }`}
+                                >Products <img src="/icons/dropdown-arrow.png" alt="" className="pt-1 ps-1" /></span>
 
                                 <div className="products-menu">
 
@@ -107,6 +117,7 @@ const Navbar = () => {
 
                                         <span className="product-menu-arrow">›</span>
                                     </Link>
+
 
                                     <Link
                                         to="/products/MensTrousers"

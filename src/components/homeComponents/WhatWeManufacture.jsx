@@ -104,7 +104,7 @@ const WhatWeManufacture = () => {
                 <div className="row">
 
                     {/* Featured Card */}
-                    <div className="col-lg-6 col-md-6 col-sm-12 col-12 mb-lg-0  mb-4">
+                    <div className="col-lg-6 col-md-6 col-sm-12 col-12  mb-4">
                         <div className="card">
                             <img
                                 src={largeCard.img}

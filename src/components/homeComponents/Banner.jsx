@@ -34,6 +34,7 @@ const Banner = () => {
                                         Request a Quote
                                         <img src='/icons/right_arrow.png' />
 
+
                                     </button>
                                     <button className="common-btn transparent">
                                         <Link to="/products/MensBlazer">

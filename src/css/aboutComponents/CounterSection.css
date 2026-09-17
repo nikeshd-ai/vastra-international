@@ -1,0 +1,106 @@
+.counter-section {
+    width: 100%;
+    background: #eee7da;
+}
+
+.counter-item {
+    border-right: 1px solid #d8d0c2;
+}
+
+.counter-item:last-child {
+    border-right: none;
+}
+
+.counter-content {
+    padding: 30px 10px;
+}
+
+.counter-content h6 {
+    color: #776E66;
+}
+
+
+
+
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1199px) {
+
+    .counter-content {
+        padding: 55px 30px;
+    }
+
+    .counter-title {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
+    .counter-number {
+        font-size: 52px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .counter-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .counter-item:nth-child(-n + 2) {
+        border-bottom: 1px solid #d8d0c2;
+    }
+
+    .counter-content {
+        min-height: 200px;
+        padding: 45px 30px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 575px) {
+
+    .counter-item {
+        border-right: none;
+        border-bottom: 1px solid #d8d0c2;
+    }
+
+    .counter-item:last-child {
+        border-bottom: none;
+    }
+
+    .counter-item:nth-child(2) {
+        border-right: none;
+    }
+
+    .counter-item:nth-child(-n + 2) {
+        border-bottom: 1px solid #d8d0c2;
+    }
+
+    .counter-content {
+        min-height: auto;
+        padding: 35px 25px;
+    }
+
+    .counter-title {
+        margin-bottom: 18px;
+        font-size: 12px;
+        letter-spacing: 2.5px;
+    }
+
+    .counter-number {
+        font-size: 48px;
+    }
+}

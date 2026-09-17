@@ -169,6 +169,7 @@ const ProductPage = () => {
                                                     {category}
                                                 </a>
 
+
                                             )
                                         )}
 

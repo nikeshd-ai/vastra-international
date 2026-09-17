@@ -1,6 +1,7 @@
 /* =========================================
    NAVBAR
 ========================================= */
+
 .nav-strip {
     background-color: var(--primary-color);
     color: var(--bg-white);
@@ -24,11 +25,14 @@
     text-transform: uppercase;
     font-family: var(--big-font);
     margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .nav-strip .nav-details a {
     color: #F5F0E8CC;
     text-decoration: none;
+    font-size: 14px;
 }
 
 .nav-strip .detail {
@@ -41,6 +45,11 @@
     width: 20px;
 }
 
+
+/* =========================================
+   MAIN NAVBAR
+========================================= */
+
 .navbar {
     border-bottom: 1px solid #6B1E231A;
     background-color: var(--bg-white) !important;
@@ -51,8 +60,14 @@
     z-index: 999;
 }
 
-.navbar-brand h1 {
-    color: var(--bg-dark);
+.navbar-brand {
+    width: 240px;
+}
+
+.navbar-brand img {
+    width: 220px;
+    height: auto;
+    display: block;
 }
 
 .navbar .navbar-nav {
@@ -61,9 +76,10 @@
 
 .navbar .nav-link {
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: capitalize;
     border-radius: 5px;
+    color: black;
 }
 
 .navbar .nav-link:hover,
@@ -87,7 +103,7 @@
 
 .products-menu {
     width: 540px;
-    padding: 25px 20px 0;
+    padding: 10px 10px 0;
     margin-top: 15px;
 
     background: #ffffff;
@@ -109,14 +125,16 @@
     align-items: center;
     justify-content: space-between;
 
-    padding: 15px;
+    padding: 10px;
 
     color: #252a27;
     text-decoration: none;
 
     border-radius: 0;
 
-    transition: background-color 0.2s ease;
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease;
 }
 
 .product-menu-item:hover {
@@ -137,7 +155,7 @@
     margin: 0;
 
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     line-height: 1.25;
 
@@ -187,12 +205,12 @@
     gap: 12px;
 
     margin-top: 4px;
-    padding: 25px 18px 28px;
+    padding: 15px 15px 15px;
 
     border-top: 1px solid #ddd8cc;
 
     font-family: Arial, sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.4;
 
     color: #68706b;
@@ -265,19 +283,11 @@
 
         border-top: 1px solid #6B1E231A;
 
-        /*
-         * Initial position
-         * Menu starts outside the screen
-         * on the right side.
-         */
         transform: translateX(100%);
 
         opacity: 0;
         visibility: hidden;
 
-        /*
-         * Animation
-         */
         transition:
             transform 0.45s ease,
             opacity 0.3s ease,
@@ -369,6 +379,9 @@
         border-radius: 0;
 
         transform: none !important;
+
+        opacity: 1;
+        visibility: visible;
     }
 
 
@@ -392,7 +405,7 @@
     }
 
     .product-menu-content h6 {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .product-menu-content p {
@@ -478,7 +491,7 @@
     }
 
     .product-menu-content h6 {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .product-menu-content p {
@@ -499,8 +512,10 @@
     }
 }
 
+
 /* =========================================
    PRODUCTS HOVER DROPDOWN
+   DESKTOP ONLY
 ========================================= */
 
 @media (min-width: 992px) {
@@ -510,27 +525,86 @@
     }
 
     .products-dropdown .products-menu {
-        display: none;
+        display: block;
 
         position: absolute;
+
         top: 100%;
         left: 50%;
 
-        width: 540px;
+        width: 371px;
 
         margin-top: 0;
 
-        transform: translateX(-50%);
+        /*
+         * Start slightly above the final position
+         */
+        transform: translate(-50%, -15px);
+
+        /*
+         * Hidden initially
+         */
+        opacity: 0;
+        visibility: hidden;
+
+        /*
+         * Smooth animation
+         */
+        transition:
+            transform 0.35s ease,
+            opacity 0.3s ease,
+            visibility 0.35s ease;
 
         z-index: 1055;
+
+        /*
+         * Prevent hidden dropdown
+         * from being clickable
+         */
+        pointer-events: none;
     }
 
+
+    /* -----------------------------------------
+       Dropdown Hover / Open
+    ----------------------------------------- */
+
     .products-dropdown:hover .products-menu {
-        display: block;
+        transform: translate(-50%, 0);
+
+        opacity: 1;
+        visibility: visible;
+
+        pointer-events: auto;
     }
 
 }
 
+
+/* =========================================
+   PRODUCTS DROPDOWN ICON
+========================================= */
+
 .products-link img {
     width: 20px;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* =========================================
+   PRODUCTS ICON HOVER
+========================================= */
+
+@media (min-width: 992px) {
+
+    .products-dropdown:hover .products-link img {
+        transform: rotate(180deg);
+    }
+
+}
+
+.product-menu-item.active {
+    background-color: #f8f7f3;
+    color: var(--primary-color);
 }
