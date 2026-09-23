@@ -25,7 +25,7 @@
     text-transform: uppercase;
     font-family: var(--big-font);
     margin-bottom: 0px;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -75,11 +75,12 @@
 }
 
 .navbar .nav-link {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     text-transform: capitalize;
     border-radius: 5px;
     color: black;
+    font-family: var(--inter);
 }
 
 .navbar .nav-link:hover,
@@ -509,6 +510,12 @@
         gap: 6px;
 
         padding: 16px 12px 18px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .navbar-brand {
+        width: 200px;
     }
 }
 

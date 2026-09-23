@@ -32,7 +32,7 @@ const VastraMethod = () => {
 
     return (
         <section className="vastra-method">
-            <div className="container-fluid px-lg-5">
+            <div className="container-fluid">
 
                 <div className="row mb-lg-5 mb-md-5 mb-4">
                     <div className="common-title mb-4">

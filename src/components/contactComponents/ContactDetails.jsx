@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const ContactDetails = () => {
     return (
         <section className="contact-location">
-            <div className="container-fluid px-lg-5">
+            <div className="container-fluid">
                 <div className="row g-4">
 
                     {/* LEFT SIDE */}

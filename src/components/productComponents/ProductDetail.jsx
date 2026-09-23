@@ -36,7 +36,7 @@ const ProductDetail = () => {
             />
             <section className="product-specification">
 
-                <div className="container-fluid px-lg-5">
+                <div className="container-fluid">
 
                     {/* ================= TOP ================= */}
 

@@ -12,7 +12,7 @@ const ReqQuote = () => {
                 description="One form, one working day, one named merchandiser on your account. MOQ starts at 300 pieces per style."
             />
             <section className="request-quote-section">
-                <div className="container-fluid px-lg-5">
+                <div className="container-fluid">
                     <div className="row g-5">
 
                         <div className="col-lg-7">

@@ -10,7 +10,7 @@ const ContactBanner = ({
 }) => {
     return (
         <section className="contact-banner">
-            <div className="container-fluid px-lg-5">
+            <div className="container-fluid">
 
                 <Breadcrumb currentPage={breadcrumb} />
 

@@ -37,7 +37,7 @@ const testimonials = [
 const Testimonial = () => {
     return (
         <section className="testimonial-section">
-            <div className="container-fluid px-lg-5">
+            <div className="container-fluid">
 
                 <div className="row testimonial-row">
 

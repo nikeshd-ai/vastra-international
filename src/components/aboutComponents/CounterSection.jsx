@@ -53,7 +53,7 @@ const CounterSection = () => {
             ref={sectionRef}
             className="counter-section py-0"
         >
-            <div className="container-fluid px-lg-5">
+            <div className="container-fluid">
                 <div className="row g-0">
 
                     {counterData.map((item, index) => (

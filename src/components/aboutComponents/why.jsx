@@ -33,7 +33,7 @@ const WhyVastra = () => {
 
     return (
         <section className="why-vastra section-cream">
-            <div className="container-fluid px-lg-5">
+            <div className="container-fluid">
 
                 <div className="row">
 

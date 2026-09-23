@@ -31,7 +31,7 @@ const WhyVastra = () => {
     ]
     return (
         <section className="why-vastra section-cream ">
-            <div className="container-fluid px-lg-5">
+            <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-4 col-md-4 col-sm-12 col-12 mb-lg-0 mb-md-0 mb-4">
                         <div className="common-title mb-4">

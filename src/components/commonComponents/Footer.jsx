@@ -12,7 +12,7 @@ const Footer = () => {
 
             <footer className="footer">
 
-                <div className="container-fluid px-lg-5 footer-main">
+                <div className="container-fluid footer-main">
                     <div className="row">
                         <div className="col-lg-4 col-md-12 footer-brand">
                             <a href="/" className="footer-logo">
@@ -102,7 +102,7 @@ const Footer = () => {
                 </div>
 
                 {/* Bottom */}
-                <div className="container-fluid px-lg-5 footer-bottom">
+                <div className="container-fluid footer-bottom">
                     <div className="d-flex justify-content-between align-items-center">
 
                         <p>

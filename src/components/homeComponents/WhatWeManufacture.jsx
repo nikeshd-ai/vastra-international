@@ -82,7 +82,7 @@ const WhatWeManufacture = () => {
 
     return (
         <section className="what-we-manufacture">
-            <div className="container-fluid px-lg-5">
+            <div className="container-fluid">
 
                 {/* Section Heading */}
                 <div className="row mb-lg-5 mb-md-5 mb-4">

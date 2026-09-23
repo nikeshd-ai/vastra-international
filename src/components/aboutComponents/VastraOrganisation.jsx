@@ -27,7 +27,7 @@ const VastraOrganisation = () => {
     return (
         <section className="vastra-organisation section-cream">
 
-            <div className="container-fluid px-lg-5">
+            <div className="container-fluid">
 
                 {/* Top Section */}
                 <div className="row align-items-center">

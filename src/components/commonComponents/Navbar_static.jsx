@@ -7,7 +7,7 @@ const Navbar = () => {
         <>
 
             <div className="nav-strip">
-                <div className="container-fluid px-lg-5">
+                <div className="container-fluid">
                     <div className="row">
                         <div className="col-lg-8 col-6">
                             <p>Garment Manufacturer & Exporter | Mumbai, India | Serving Domestic & Overseas Buyers</p>
@@ -28,7 +28,7 @@ const Navbar = () => {
                 </div>
             </div>
             <nav className="navbar navbar-expand-lg ">
-                <div className="container-fluid px-lg-5">
+                <div className="container-fluid">
                     <a className="navbar-brand" href="#">
                         <img src="/logo/vastra_international.png" alt="" />
                     </a>

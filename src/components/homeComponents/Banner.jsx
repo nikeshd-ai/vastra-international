@@ -7,7 +7,7 @@ const Banner = () => {
     return (
         <>
             <section className="banner">
-                <div className="container-fluid px-lg-5">
+                <div className="container-fluid">
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-12 mb-lg-0 mb-md-0 mb-4 pe-lg-5">
                             <div className="banner-content d-flex flex-column gap-4">

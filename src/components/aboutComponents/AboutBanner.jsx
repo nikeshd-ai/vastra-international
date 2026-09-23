@@ -4,7 +4,7 @@ const AboutBanner = () => {
     return (
         <>
             <section className="banner">
-                <div className="container-fluid px-lg-5">
+                <div className="container-fluid">
                     <div className="row justify-content-center">
                         <div className="col-lg-8 col-md-10 col-sm-11 col-12">
                             <div className="banner-content d-flex align-items-center text-center flex-column gap-4">

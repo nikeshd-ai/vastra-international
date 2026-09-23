@@ -35,6 +35,7 @@
   --big-font: "Arsenal", sans-serif;
   --eye-brow-font: "IBM Plex Mono", monospace;
   --btn-font: "Archivo", sans-serif;
+  --inter: "Inter", sans-serif;
 }
 
 
@@ -271,6 +272,18 @@ section {
   background-color: var(--bg-dark);
 }
 
+.container-fluid {
+  padding-left: 80px !important;
+  padding-right: 80px !important;
+}
+
+@media screen and (max-width:991px) {
+  .container-fluid {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
 
 /* =========================================
    COMMON TEXT COLORS
@@ -284,7 +297,7 @@ section {
 .common-title h6 {
   font-family: var(--eye-brow-font);
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 10px;
   color: var(--primary-color);
   letter-spacing: 2px;
 }

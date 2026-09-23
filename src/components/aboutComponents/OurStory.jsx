@@ -4,7 +4,7 @@ import "../../css/aboutComponents/OurStory.css";
 const OurStory = () => {
     return (
         <section className="our-story-section">
-            <div className="container-fluid px-lg-5">
+            <div className="container-fluid">
                 <div className="row">
 
                     {/* Left Content */}

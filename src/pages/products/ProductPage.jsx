@@ -35,7 +35,7 @@ const ProductPage = () => {
 
             <section className="category-styles-section">
 
-                <div className="container-fluid px-lg-5">
+                <div className="container-fluid">
 
                     {/* INTRO */}
 

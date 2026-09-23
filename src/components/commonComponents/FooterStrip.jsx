@@ -5,7 +5,7 @@ import '../../css/commonComponents/Footer.css'
 const FooterStrip = () => {
     return (
         <section className="footer-strip">
-            <div className="container-fluid px-lg-5">
+            <div className="container-fluid">
                 <div className="row text-center justify-content-center">
                     <div className="col-lg-4">
                         <div className="common-title mb-3">

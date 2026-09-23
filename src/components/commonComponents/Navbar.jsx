@@ -11,7 +11,7 @@ const Navbar = () => {
     return (
         <>
             <div className="nav-strip">
-                <div className="container-fluid px-lg-5">
+                <div className="container-fluid">
                     <div className="row">
                         <div className="col-lg-6 col-6">
                             <p>
@@ -42,7 +42,7 @@ const Navbar = () => {
             </div>
 
             <nav className="navbar navbar-expand-lg">
-                <div className="container-fluid px-lg-5">
+                <div className="container-fluid">
 
                     {/* Logo */}
                     <Link className="navbar-brand" to="/">
