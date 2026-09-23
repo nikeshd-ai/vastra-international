@@ -39,6 +39,8 @@
 
 .organisation-box h5 {
     margin-bottom: 20px;
+    font-family: var(--inter);
+    font-weight: 600;
 }
 
 .organisation-box p {

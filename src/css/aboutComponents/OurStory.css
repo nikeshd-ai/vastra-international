@@ -87,8 +87,7 @@
 
     margin: 0 0 22px;
 
-    color: var(--bg-dark);
-
+    font-family: var(--big-font);
     font-size: 27px;
     font-weight: 600;
     line-height: 1.45;

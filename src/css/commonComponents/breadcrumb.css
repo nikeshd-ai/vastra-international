@@ -21,7 +21,7 @@
 
     letter-spacing: 2px;
     text-transform: uppercase;
-
+    font-family: var(--eye-brow-font);
     text-decoration: none;
 }
 

@@ -58,8 +58,8 @@
     margin: 0 0 35px;
 
     color: var(--primary-color);
-
-    font-size: 18px;
+    font-family: var(--inter);
+    font-size: 17px;
     font-weight: 500;
     line-height: 1.4;
 }

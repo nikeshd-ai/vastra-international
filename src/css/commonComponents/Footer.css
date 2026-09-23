@@ -158,7 +158,7 @@
 .footer-bottom p {
     margin: 0;
 
-    font-family: "Poppins", sans-serif;
+    font-family: var(--inter);
     font-size: 14px;
     font-weight: 400;
 

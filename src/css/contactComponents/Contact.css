@@ -51,6 +51,7 @@
     font-size: 23px;
     font-weight: 700;
     margin-bottom: 18px;
+    font-family: var(--btn-font);
 }
 
 
@@ -133,6 +134,7 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 12px;
+    font-family: var(--btn-font);
 }
 
 .unit-card p {

@@ -158,7 +158,7 @@ p {
   border: 1px solid transparent;
   border-radius: 9px;
 
-  font-family: var(--body-font);
+  font-family: var(--btn-font);
   font-size: 12px;
   font-weight: 600;
   line-height: 1.2;
@@ -170,6 +170,8 @@ p {
 .common-btn.transparent {
   background-color: transparent;
   border: 1px solid var(--primary-color);
+  font-family: var(--btn-font);
+  font-weight: 600;
 }
 
 .common-btn.transparent a {

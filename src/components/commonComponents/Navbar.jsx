@@ -47,7 +47,7 @@ const Navbar = () => {
                     {/* Logo */}
                     <Link className="navbar-brand" to="/">
                         <img
-                            src="/logo/logosvg.svg"
+                            src="/logo/vastra_international.png"
                             alt="Vastra International"
                         />
                     </Link>
