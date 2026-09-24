@@ -1,3 +1,13 @@
+.what-we-manufacture .transparent {
+    border: 1px solid #1C141226;
+}
+
+.what-we-manufacture .transparent a {
+    color: black;
+    font-weight: 700;
+    font-weight: var(--btn-font);
+}
+
 .card {
     border: 1px solid #DED3C4;
     border-radius: 10px !important;

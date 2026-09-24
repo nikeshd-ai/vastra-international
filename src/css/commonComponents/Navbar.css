@@ -1,7 +1,3 @@
-/* =========================================
-   NAVBAR
-========================================= */
-
 .nav-strip {
     background-color: var(--primary-color);
     color: var(--bg-white);
@@ -53,15 +49,19 @@
 .navbar {
     border-bottom: 1px solid #6B1E231A;
     background-color: var(--bg-white) !important;
+
     position: sticky !important;
     top: 0;
     left: 0;
     right: 0;
+
     z-index: 999;
 }
 
 .navbar-brand {
     width: 240px;
+    position: relative;
+    z-index: 9999;
 }
 
 .navbar-brand img {
@@ -91,6 +91,13 @@
 
 .navbar-toggler-icon {
     background-image: url(../../../public/icons/menu-bar.png) !important;
+
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    transform: rotate(90deg);
 }
 
 
@@ -104,10 +111,12 @@
 
 .products-menu {
     width: 540px;
+
     padding: 10px 10px 0;
     margin-top: 15px;
 
     background: #ffffff;
+
     border: 1px solid #e5e1d8;
     border-radius: 0;
 
@@ -215,6 +224,8 @@
     line-height: 1.4;
 
     color: #68706b;
+
+    cursor: pointer;
 }
 
 .product-menu-footer .red {
@@ -230,10 +241,12 @@
 }
 
 
-/* =========================================
-   MOBILE NAVBAR
-   Bootstrap breakpoint: 991.98px
-========================================= */
+
+body.mobile-menu-open {
+    overflow: hidden;
+}
+
+
 
 @media (max-width: 991.98px) {
 
@@ -242,7 +255,13 @@
     ----------------------------------------- */
 
     .navbar {
-        position: relative;
+        position: sticky !important;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+
         z-index: 1050;
     }
 
@@ -252,6 +271,10 @@
     ----------------------------------------- */
 
     .navbar .navbar-toggler {
+        position: relative;
+
+        z-index: 1070;
+
         border: none;
         outline: none;
         box-shadow: none;
@@ -271,28 +294,43 @@
     ----------------------------------------- */
 
     .navbar .navbar-collapse {
-        position: absolute;
 
-        top: 100%;
+        display: block !important;
+        pointer-events: none;
+
+        position: fixed;
+
+        top: 0;
         left: 0;
 
         width: 100%;
+        height: 100vh;
 
-        padding: 25px 20px;
+        padding: 100px 20px 30px;
 
         background-color: var(--bg-white);
 
         border-top: 1px solid #6B1E231A;
 
-        transform: translateX(100%);
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        -webkit-overflow-scrolling: touch;
+
+
+        transform-origin: left center;
+        transform: perspective(1400px) rotateY(-100deg);
+        backface-visibility: hidden;
 
         opacity: 0;
         visibility: hidden;
 
         transition:
-            transform 0.45s ease,
-            opacity 0.3s ease,
-            visibility 0.45s ease;
+            transform 1.5s cubic-bezier(0.25, 0.1, 0.25, 1),
+            opacity 0.5s ease,
+            visibility 0.6s ease;
+
+        z-index: 1060;
     }
 
 
@@ -301,10 +339,12 @@
     ----------------------------------------- */
 
     .navbar .navbar-collapse.show {
-        transform: translateX(0);
+        transform: perspective(400px) rotateY(0deg);
 
         opacity: 1;
         visibility: visible;
+
+        pointer-events: auto;
     }
 
 
@@ -330,25 +370,51 @@
 
     .navbar .nav-item {
         width: 100%;
+
+        opacity: 0;
+        transform: translateX(24px);
+        transition:
+            opacity 0.4s ease,
+            transform 0.4s ease;
     }
 
 
-    /* -----------------------------------------
-       Navigation Links
-    ----------------------------------------- */
+    .navbar-collapse.show .navbar-nav .nav-item {
+        opacity: 1;
+        transform: translateX(0);
+    }
 
-    .navbar .nav-link {
-        width: 100%;
+    .navbar-collapse.show .navbar-nav .nav-item:nth-child(1) {
+        transition-delay: 0.12s;
+    }
 
-        padding: 12px 15px;
+    .navbar-collapse.show .navbar-nav .nav-item:nth-child(2) {
+        transition-delay: 0.18s;
+    }
 
-        font-size: 15px;
+    .navbar-collapse.show .navbar-nav .nav-item:nth-child(3) {
+        transition-delay: 0.24s;
+    }
+
+    .navbar-collapse.show .navbar-nav .nav-item:nth-child(4) {
+        transition-delay: 0.30s;
+    }
+
+    .navbar-collapse .common-btn {
+        opacity: 0;
+        transform: translateX(24px);
+        transition:
+            opacity 0.4s ease,
+            transform 0.4s ease;
+    }
+
+    .navbar-collapse.show .common-btn {
+        opacity: 1;
+        transform: translateX(0);
+        transition-delay: 0.36s;
     }
 
 
-    /* -----------------------------------------
-       Request Quote Button
-    ----------------------------------------- */
 
     .navbar .common-btn {
         width: 100%;
@@ -357,32 +423,67 @@
     }
 
 
-    /* =========================================
-       MOBILE PRODUCTS DROPDOWN
-    ========================================= */
 
     .products-dropdown {
         position: relative;
     }
+
+
+
 
     .products-menu {
         position: static !important;
 
         width: 100%;
 
-        margin-top: 5px;
+        margin-top: 0;
 
-        padding: 10px 0 0;
+        padding: 0;
 
         background-color: var(--bg-white);
 
         border: none;
         border-radius: 0;
 
-        transform: none !important;
 
-        opacity: 1;
+        display: block;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+
+        transform: none !important;
         visibility: visible;
+
+        transition:
+            max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 0.3s ease,
+            margin-top 0.4s ease;
+    }
+
+
+    /*
+       Products opened on mobile
+    */
+
+    .products-menu.mobile-products-open {
+        max-height: 800px;
+        opacity: 1;
+        margin-top: 5px;
+    }
+
+
+    /* -----------------------------------------
+       Products Arrow
+    ----------------------------------------- */
+
+    .products-link img {
+        width: 20px;
+
+        transition: transform 0.3s ease;
+    }
+
+    .products-dropdown:has(.mobile-products-open) .products-link img {
+        transform: rotate(180deg);
     }
 
 
@@ -445,7 +546,7 @@
 @media (max-width: 767.98px) {
 
     .navbar .navbar-collapse {
-        padding: 20px 15px;
+        padding: 90px 15px 25px;
     }
 
     .navbar .nav-link {
@@ -453,7 +554,7 @@
     }
 
     .products-menu {
-        padding-top: 5px;
+        /* padding-top: 5px; */
     }
 
     .product-menu-item {
@@ -480,7 +581,7 @@
 @media (max-width: 575.98px) {
 
     .navbar .navbar-collapse {
-        padding: 18px 12px;
+        padding: 85px 12px 20px;
     }
 
     .navbar .nav-link {
@@ -513,7 +614,9 @@
     }
 }
 
-@media screen and (max-width:375px) {
+
+@media screen and (max-width: 375px) {
+
     .navbar-brand {
         width: 200px;
     }
@@ -531,6 +634,7 @@
         position: relative;
     }
 
+
     .products-dropdown .products-menu {
         display: block;
 
@@ -543,31 +647,27 @@
 
         margin-top: 0;
 
-        /*
-         * Start slightly above the final position
-         */
+
+
         transform: translate(-50%, -15px);
 
-        /*
-         * Hidden initially
-         */
+
+
+
         opacity: 0;
         visibility: hidden;
 
-        /*
-         * Smooth animation
-         */
+
+
+
         transition:
-            transform 0.35s ease,
-            opacity 0.3s ease,
-            visibility 0.35s ease;
+            transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            opacity 0.35s ease,
+            visibility 0.4s ease;
 
         z-index: 1055;
 
-        /*
-         * Prevent hidden dropdown
-         * from being clickable
-         */
+
         pointer-events: none;
     }
 
@@ -577,12 +677,48 @@
     ----------------------------------------- */
 
     .products-dropdown:hover .products-menu {
+
         transform: translate(-50%, 0);
 
         opacity: 1;
         visibility: visible;
 
         pointer-events: auto;
+    }
+
+    .products-dropdown .products-menu .product-menu-item {
+        opacity: 0;
+        transform: translateY(8px);
+        transition:
+            background-color 0.2s ease,
+            color 0.2s ease,
+            opacity 0.3s ease,
+            transform 0.3s ease;
+    }
+
+    .products-dropdown:hover .products-menu .product-menu-item {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .products-dropdown:hover .products-menu .product-menu-item:nth-child(1) {
+        transition-delay: 0.08s;
+    }
+
+    .products-dropdown:hover .products-menu .product-menu-item:nth-child(2) {
+        transition-delay: 0.12s;
+    }
+
+    .products-dropdown:hover .products-menu .product-menu-item:nth-child(3) {
+        transition-delay: 0.16s;
+    }
+
+    .products-dropdown:hover .products-menu .product-menu-item:nth-child(4) {
+        transition-delay: 0.20s;
+    }
+
+    .products-dropdown:hover .products-menu .product-menu-item:nth-child(5) {
+        transition-delay: 0.24s;
     }
 
 }
@@ -610,6 +746,11 @@
     }
 
 }
+
+
+/* =========================================
+   ACTIVE PRODUCT MENU ITEM
+========================================= */
 
 .product-menu-item.active {
     background-color: #f8f7f3;
