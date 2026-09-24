@@ -310,7 +310,7 @@ section {
   color: var(--heading-color);
   line-height: 1.1;
   font-weight: 800;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
 }
 
 .common-title h2 {
