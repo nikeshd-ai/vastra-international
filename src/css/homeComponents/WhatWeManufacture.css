@@ -33,10 +33,20 @@
 
 .card h6 {
     font-family: var(--eye-font);
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 1px;
     margin-top: 15px;
     color: rgb(137, 136, 136);
+}
+
+
+.card .card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card .card-body-top {
+    flex: 1;
 }

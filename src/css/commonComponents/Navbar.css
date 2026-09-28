@@ -4,11 +4,7 @@
     padding: 10px 0;
 }
 
-@media (max-width: 761px) {
-    .nav-strip {
-        display: none;
-    }
-}
+
 
 .nav-strip .nav-details {
     display: flex;
@@ -39,6 +35,12 @@
 
 .nav-strip .detail img {
     width: 20px;
+}
+
+@media (max-width: 992px) {
+    .nav-strip {
+        display: none;
+    }
 }
 
 

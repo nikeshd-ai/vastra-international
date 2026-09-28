@@ -110,7 +110,7 @@ const Footer = () => {
                         </p>
 
                         <p>
-                            @design_and_developed by <a href="http://parasightsolutions.com" target="_blank" rel="noopener noreferrer" style={{ color: '#000000' }}>parasightsolutions.com</a>
+                            @design_and_developed by <a href="http://parasightsolutions.com" target="_blank" rel="noopener noreferrer">parasightsolutions.com</a>
                         </p>
 
                     </div>

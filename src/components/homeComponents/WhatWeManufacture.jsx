@@ -112,9 +112,12 @@ const WhatWeManufacture = () => {
                             />
 
                             <div className="card-body">
-                                <h5>{largeCard.title}</h5>
+                                <div className="card-body-top">
+                                    <h5>{largeCard.title}</h5>
 
-                                <p>{largeCard.description}</p>
+                                    <p>{largeCard.description}</p>
+                                </div>
+
 
                                 <h6>{largeCard.var}</h6>
                             </div>
@@ -137,9 +140,11 @@ const WhatWeManufacture = () => {
                                         />
 
                                         <div className="card-body">
-                                            <h5>{card.title}</h5>
+                                            <div className="card-body-top">
+                                                <h5>{card.title}</h5>
 
-                                            <p>{card.description}</p>
+                                                <p>{card.description}</p>
+                                            </div>
 
                                             <h6>{card.var}</h6>
                                         </div>
@@ -166,9 +171,11 @@ const WhatWeManufacture = () => {
                                 />
 
                                 <div className="card-body">
-                                    <h5>{card.title}</h5>
+                                    <div className="card-body-top">
+                                        <h5>{card.title}</h5>
 
-                                    <p>{card.description}</p>
+                                        <p>{card.description}</p>
+                                    </div>
 
                                     <h6>{card.var}</h6>
                                 </div>

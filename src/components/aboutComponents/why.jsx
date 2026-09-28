@@ -62,7 +62,7 @@ const WhyVastra = () => {
                                 className="nav-link"
                                 to="/contact"
                             >
-                                Start an enquiry
+                                Start an Enquiry
                             </NavLink>
                             <img src="/icons/right_arrow.png" alt="" />
                         </button>

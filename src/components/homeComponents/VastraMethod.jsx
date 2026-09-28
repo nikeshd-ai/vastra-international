@@ -34,7 +34,7 @@ const VastraMethod = () => {
         <section className="vastra-method">
             <div className="container-fluid">
 
-                <div className="row mb-lg-5 mb-md-5 mb-4">
+                <div className="row mb-lg-2 mb-md-2 mb-2">
                     <div className="common-title mb-4">
                         <h6>The Vastra Method</h6>
                         <h2>One clear thread from idea to invoice.</h2>

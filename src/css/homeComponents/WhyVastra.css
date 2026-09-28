@@ -4,6 +4,14 @@
 }
 
 
+.why-vastra .row>div:nth-child(5)>.why-strip,
+.why-vastra .row>div:nth-child(4)>.why-strip {
+    border-bottom: 1px solid transparent;
+}
+
+
+
+
 
 .why-strip h6 {
     font-family: var(--eye-brow-font);

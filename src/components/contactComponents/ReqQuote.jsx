@@ -58,6 +58,7 @@ const ReqQuote = () => {
             newErrors.email = "Enter a valid email address";
         }
 
+
         if (!formData.phone.trim()) {
             newErrors.phone = "Phone / WhatsApp number is required";
         }

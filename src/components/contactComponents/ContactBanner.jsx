@@ -26,7 +26,7 @@ const ContactBanner = ({
                         </div>
                     </div>
 
-                    <div className="col-lg-6 ps-lg-5">
+                    <div className="col-lg-6 ps-lg-5 d-flex align-items-end">
                         <div className="common-title">
 
                             <p>{description}</p>

@@ -4,7 +4,7 @@
 
 .footer-strip .common-btn {
     background-color: white;
-    width: 210px;
+    width: 163px;
 }
 
 .footer-strip .common-btn a {
@@ -48,7 +48,7 @@
 }
 
 .footer-brand p {
-    max-width: 400px;
+    max-width: 280px;
     margin: 27px 0 0;
 
     font-size: 14px;
@@ -150,7 +150,7 @@
     width: 87.3%;
     margin: 0 auto;
 
-    padding: 33px 0;
+    padding: 25px 0;
 
     border-top: 1px solid rgba(81, 75, 72, 0.15);
 }
@@ -163,6 +163,11 @@
     font-weight: 400;
 
     color: #766f6a;
+}
+
+.footer-bottom p a {
+    color: #766f6a;
+    text-decoration: none;
 }
 
 /* ================================
