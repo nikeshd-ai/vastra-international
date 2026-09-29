@@ -58,9 +58,10 @@ const ReqQuote = () => {
             newErrors.email = "Enter a valid email address";
         }
 
-
         if (!formData.phone.trim()) {
             newErrors.phone = "Phone / WhatsApp number is required";
+        } else if (/[a-zA-Z]/.test(formData.phone)) {
+            newErrors.phone = "Phone / WhatsApp number cannot contain letters";
         }
 
         if (!formData.category) {

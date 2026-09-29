@@ -125,9 +125,9 @@
     border-bottom: 1px solid #ddd;
 
     color: #241c1b;
-
     font-size: 27px;
     font-weight: 700;
+    font-family: var(--inter);
 }
 
 
@@ -172,7 +172,7 @@
 
 .style-title h3 {
     margin: 0;
-
+    font-family: var(--archivo);
     color: #241c1b;
 
     font-size: 19px;

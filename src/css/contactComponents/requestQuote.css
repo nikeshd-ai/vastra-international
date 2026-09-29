@@ -71,8 +71,7 @@ select.quote-input {
     font-size: 13px;
 }
 
-.form-control {
-
+.form-control::placeholder {
     color: #2A1E1B66 !important;
 }
 
@@ -115,6 +114,10 @@ select.quote-input {
 
 .form-select {
     color: #2A1E1B66 !important;
+}
+
+.form-select option {
+    color: #dd380eef !important;
 }
 
 
