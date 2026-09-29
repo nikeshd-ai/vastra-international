@@ -161,13 +161,13 @@ const ProductPage = () => {
                                         {product.otherCategories.map(
                                             (category) => (
 
-                                                <a
-                                                    href="#"
+                                                <p
+                                                    // href="#"
                                                     key={category}
                                                     className="category-tag"
                                                 >
                                                     {category}
-                                                </a>
+                                                </p>
 
 
                                             )
