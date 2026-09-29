@@ -8,6 +8,8 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isProductsOpen, setIsProductsOpen] = useState(false);
 
+    console.log("Menu Open and Close: ", isMenuOpen)
+
     const isProductActive =
         location.pathname.startsWith("/products/") ||
         location.pathname.startsWith("/productdetail");

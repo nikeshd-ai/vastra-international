@@ -698,6 +698,7 @@ body.mobile-menu-open {
             transform 0.3s ease;
     }
 
+
     .products-dropdown:hover .products-menu .product-menu-item {
         opacity: 1;
         transform: translateY(0);
