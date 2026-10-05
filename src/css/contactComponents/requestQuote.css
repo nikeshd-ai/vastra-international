@@ -1,5 +1,9 @@
 /* ================= FORM ================= */
 
+.request-quote-section .container-fluid {
+    padding: 0 15px !important;
+}
+
 .quote-form-box {
     background: #fff;
     border: 1px solid #d8d0c5;
@@ -69,6 +73,10 @@ select.quote-input {
 .quote-textarea::placeholder {
     color: #2A1E1B66 !important;
     font-size: 13px;
+}
+
+.form-control {
+    color: #2A1E1B66 !important;
 }
 
 .form-control::placeholder {

@@ -37,7 +37,7 @@ const Banner = () => {
 
                                     </button>
                                     <button className="common-btn transparent">
-                                        <Link to="/products/MensBlazer">
+                                        <Link to="/products/FormalWear">
                                             Explore Products
                                         </Link>
                                     </button>

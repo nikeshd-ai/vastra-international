@@ -69,69 +69,69 @@ const Navbar = () => {
         };
     return (
         <>
-
+            {" "}
             <div className="nav-strip">
-
+                {" "}
                 <div className="container-fluid">
-
+                    {" "}
                     <div className="row">
-
+                        {" "}
                         <div className="col-lg-6 col-6">
-
+                            {" "}
                             <p>
-
+                                {" "}
                                 Garment Manufacturer & Exporter | Mumbai, India
-                                | Serving Domestic & Overseas Buyers
-                            </p>
-                        </div>
+                                | Serving Domestic & Overseas Buyers{" "}
+                            </p>{" "}
+                        </div>{" "}
                         <div className="col-lg-6 col-6 d-flex justify-content-lg-end justify-content-center">
-
+                            {" "}
                             <div className="nav-details">
-
+                                {" "}
                                 <div className="detail">
-
+                                    {" "}
                                     <img
                                         src="/icons/call_icon.png"
                                         alt=""
-                                    />
+                                    />{" "}
                                     <a href="tel:+912240048080">
-
-                                        +91 22 4004 8080
-                                    </a>
-                                </div>
+                                        {" "}
+                                        +91 22 4004 8080{" "}
+                                    </a>{" "}
+                                </div>{" "}
                                 <div className="detail">
-
+                                    {" "}
                                     <img
                                         src="/icons/mail_icon.png"
                                         alt=""
-                                    />
+                                    />{" "}
                                     <a href="mailto:sales@vastrainternational.com">
-
-                                        sales@vastrainternational.com
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                                        {" "}
+                                        sales@vastrainternational.com{" "}
+                                    </a>{" "}
+                                </div>{" "}
+                            </div>{" "}
+                        </div>{" "}
+                    </div>{" "}
+                </div>{" "}
+            </div>{" "}
             <nav className="navbar navbar-expand-lg">
-
+                {" "}
                 <div className="container-fluid">
-
-                    {/* Logo */}
+                    {" "}
+                    {/* Logo */}{" "}
                     <Link
                         className="navbar-brand"
                         to="/"
                         onClick={handleNavLinkClick}
                     >
-
+                        {" "}
                         <img
                             src="/logo/vastra_international.png"
                             alt="Vastra International"
-                        />
-                    </Link>
-                    {/* Mobile Toggle */}
+                        />{" "}
+                    </Link>{" "}
+                    {/* Mobile Toggle */}{" "}
                     <button
                         className="navbar-toggler"
                         type="button"
@@ -140,173 +140,173 @@ const Navbar = () => {
                         aria-expanded={isMenuOpen}
                         aria-label="Toggle navigation"
                     >
-
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    {/* Navigation */}
+                        {" "}
+                        <span className="navbar-toggler-icon"></span>{" "}
+                    </button>{" "}
+                    {/* Navigation */}{" "}
                     <div
                         className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
                         id="navbarSupportedContent"
                     >
-
+                        {" "}
                         <ul className="navbar-nav m-auto mb-2 mb-lg-0">
-
-                            {/* Home */}
+                            {" "}
+                            {/* Home */}{" "}
                             <li className="nav-item">
-
+                                {" "}
                                 <NavLink
                                     to="/"
                                     end
                                     className="nav-link"
                                     onClick={handleNavLinkClick}
                                 >
-
-                                    Home
-                                </NavLink>
-                            </li>
-                            {/* About */}
+                                    {" "}
+                                    Home{" "}
+                                </NavLink>{" "}
+                            </li>{" "}
+                            {/* About */}{" "}
                             <li className="nav-item">
-
+                                {" "}
                                 <NavLink
                                     to="/about"
                                     className="nav-link"
                                     onClick={handleNavLinkClick}
                                 >
-
-                                    About Us
-                                </NavLink>
-                            </li>
-                            {/* Products */}
+                                    {" "}
+                                    About Us{" "}
+                                </NavLink>{" "}
+                            </li>{" "}
+                            {/* Products */}{" "}
                             <li
                                 className={`nav-item products-dropdown ${isProductsHoverDisabled ? "products-hover-disabled" : ""}`}
                                 onMouseEnter={handleProductsMouseEnter}
                                 onMouseLeave={handleProductsMouseLeave}
                             >
-
+                                {" "}
                                 <span
                                     className={`nav-link products-link d-flex ${isProductActive ? "active" : ""}`}
                                     onClick={handleProductsToggle}
                                     role="button"
                                     tabIndex="0"
                                 >
-
-                                    <span>Products</span>
+                                    {" "}
+                                    <span>Products</span>{" "}
                                     <img
                                         src="/icons/dropdown-arrow.png"
                                         alt=""
                                         className="pt-1 ps-1"
-                                    />
-                                </span>
+                                    />{" "}
+                                </span>{" "}
                                 <div
                                     className={`products-menu ${isProductsOpen ? "mobile-products-open" : ""}`}
                                 >
-
-                                    {/* Men's Blazer */}
+                                    {" "}
+                                    {/* Men's Blazer */}{" "}
                                     <Link
-                                        to="/products/FormalWear"
+                                        to="/products/MensBlazer"
                                         className="product-menu-item"
                                         onClick={handleProductLinkClick}
                                     >
-
+                                        {" "}
                                         <div className="product-menu-content">
-
-                                            <h6>Formal Wear</h6>
+                                            {" "}
+                                            <h6>Men's Coats & Blazers</h6>{" "}
                                             <p>
-
+                                                {" "}
                                                 Structured tailoring, cut for
-                                                everyday movement.
-                                            </p>
-                                        </div>
+                                                everyday movement.{" "}
+                                            </p>{" "}
+                                        </div>{" "}
                                         <span className="product-menu-arrow">
-
-                                            ›
-                                        </span>
-                                    </Link>
-                                    {/* Men's Trousers */}
+                                            {" "}
+                                            ›{" "}
+                                        </span>{" "}
+                                    </Link>{" "}
+                                    {/* Men's Trousers */}{" "}
                                     <Link
-                                        to="/products/CorporateWear"
+                                        to="/products/MensTrousers"
                                         className="product-menu-item"
                                         onClick={handleProductLinkClick}
                                     >
-
+                                        {" "}
                                         <div className="product-menu-content">
-
-                                            <h6>Corporate Wears</h6>
+                                            {" "}
+                                            <h6>Men's Formal Trousers</h6>{" "}
                                             <p>
-
+                                                {" "}
                                                 Clean silhouettes in dependable
-                                                suiting cloth.
-                                            </p>
-                                        </div>
+                                                suiting cloth.{" "}
+                                            </p>{" "}
+                                        </div>{" "}
                                         <span className="product-menu-arrow">
-
-                                            ›
-                                        </span>
-                                    </Link>
-                                    {/* Nehru Jacket */}
+                                            {" "}
+                                            ›{" "}
+                                        </span>{" "}
+                                    </Link>{" "}
+                                    {/* Nehru Jacket */}{" "}
                                     <Link
-                                        to="/products/Uniforms"
+                                        to="/products/NehruJacket"
                                         className="product-menu-item"
                                         onClick={handleProductLinkClick}
                                     >
-
+                                        {" "}
                                         <div className="product-menu-content">
-
-                                            <h6>Uniforms</h6>
+                                            {" "}
+                                            <h6>Nehru Jackets</h6>{" "}
                                             <p>
-
+                                                {" "}
                                                 Modern Indian occasionwear with
-                                                a sharp finish.
-                                            </p>
-                                        </div>
+                                                a sharp finish.{" "}
+                                            </p>{" "}
+                                        </div>{" "}
                                         <span className="product-menu-arrow">
-
-                                            ›
-                                        </span>
-                                    </Link>
-                                    {/* Men's T-Shirt */}
+                                            {" "}
+                                            ›{" "}
+                                        </span>{" "}
+                                    </Link>{" "}
+                                    {/* Men's T-Shirt */}{" "}
                                     <Link
-                                        to="/products/Workwear"
+                                        to="/products/MensTshirt"
                                         className="product-menu-item"
                                         onClick={handleProductLinkClick}
                                     >
-
+                                        {" "}
                                         <div className="product-menu-content">
-
-                                            <h6>Workwear</h6>
+                                            {" "}
+                                            <h6>Men's T-Shirts</h6>{" "}
                                             <p>
-
+                                                {" "}
                                                 Reliable jersey staples for
-                                                private labels.
-                                            </p>
-                                        </div>
+                                                private labels.{" "}
+                                            </p>{" "}
+                                        </div>{" "}
                                         <span className="product-menu-arrow">
-
-                                            ›
-                                        </span>
-                                    </Link>
-                                    {/* Ladies Blazer */}
+                                            {" "}
+                                            ›{" "}
+                                        </span>{" "}
+                                    </Link>{" "}
+                                    {/* Ladies Blazer */}{" "}
                                     <Link
-                                        to="/products/CasualWear"
+                                        to="/products/LadiesBlazer"
                                         className="product-menu-item"
                                         onClick={handleProductLinkClick}
                                     >
-
+                                        {" "}
                                         <div className="product-menu-content">
-
-                                            <h6>Casual Wear</h6>
+                                            {" "}
+                                            <h6>Ladies' Blazers</h6>{" "}
                                             <p>
-
+                                                {" "}
                                                 Polished separates made for
-                                                contemporary workwear.
-                                            </p>
-                                        </div>
+                                                contemporary workwear.{" "}
+                                            </p>{" "}
+                                        </div>{" "}
                                         <span className="product-menu-arrow">
-
-                                            ›
-                                        </span>
-                                    </Link>
-                                    {/* Request Quote */}
+                                            {" "}
+                                            ›{" "}
+                                        </span>{" "}
+                                    </Link>{" "}
+                                    {/* Request Quote */}{" "}
                                     <div
                                         className="product-menu-footer"
                                         role="button"
@@ -320,29 +320,29 @@ const Navbar = () => {
                                             }
                                         }}
                                     >
-
-                                        <span> Need a custom brief? </span>
+                                        {" "}
+                                        <span> Need a custom brief? </span>{" "}
                                         <span className="red">
-
-                                            Request a quote
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-                            {/* Contact */}
+                                            {" "}
+                                            Request a quote{" "}
+                                        </span>{" "}
+                                    </div>{" "}
+                                </div>{" "}
+                            </li>{" "}
+                            {/* Contact */}{" "}
                             <li className="nav-item">
-
+                                {" "}
                                 <NavLink
                                     to="/contact"
                                     className="nav-link"
                                     onClick={handleNavLinkClick}
                                 >
-
-                                    Contact
-                                </NavLink>
-                            </li>
-                        </ul>
-                        {/* Request Quote */}
+                                    {" "}
+                                    Contact{" "}
+                                </NavLink>{" "}
+                            </li>{" "}
+                        </ul>{" "}
+                        {/* Request Quote */}{" "}
                         <button
                             type="button"
                             className="common-btn"
@@ -355,12 +355,12 @@ const Navbar = () => {
                                 }
                             }}
                         >
-
-                            Request a Quote
-                        </button>
-                    </div>
-                </div>
-            </nav>
+                            {" "}
+                            Request a Quote{" "}
+                        </button>{" "}
+                    </div>{" "}
+                </div>{" "}
+            </nav>{" "}
         </>
     );
 };

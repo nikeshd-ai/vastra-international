@@ -1,43 +1,53 @@
 const products = {
-    "MensBlazer": {
+    "FormalWear": {
         type: "category",
 
-        breadcrumb: "Men’s Coats & Blazers Manufacturer",
-        title: "MEN'S BLAZERS",
-        heading: "Men’s Coats & Blazers Manufacturer",
+        breadcrumb: "Formal Wear",
+        title: "Formal Wear",
+        heading: "Formal Wear",
 
         description:
             "Looking for a reliable men’s coat and blazer manufacturer for your brand, retail business, wholesale requirements, or corporate collection?",
 
         intro:
-            "Vastra International manufactures quality men’s coats, blazers, jackets, and tailored outerwear designed for today’s fashion and business markets. From classic formal blazers to contemporary coats, we focus on creating garments that combine fit, finish, fabric quality, craftsmanship, and commercial appeal.",
+            "We manufacture formal garments for apparel brands, retailers and institutional buyers. Our range includes shirts, trousers and structured layers, with a focus on precise stitching, consistent sizing and a polished finish.",
 
         image: "/products/shorts.jpg",
 
         styles: [
             {
                 id: "01",
-                name: "Mens Blazer Manufacturer",
+                name: "Trousers",
                 description:
-                    "A good blazer is more than a garment. The right fabric, structure, fit, lapel, lining, buttons, stitching, and finishing determine how the finished product looks and feels.",
-                secdescription:
-                    "At Vastra International, we manufacture men's blazers for brands, retailers, distributors, wholesalers, and institutional buyers."
+                    "We manufacture formal trousers with clean silhouettes, structured waistbands and neatly finished seams. Production can be aligned with the buyer’s fabric, fit and styling specifications.",
+                // secdescription:
+                //     "At Vastra International, we manufacture men's blazers for brands, retailers, distributors, wholesalers, and institutional buyers."
             },
             {
                 id: "02",
-                name: "Men's Coat Manufacturer",
+                name: "Blazers",
                 description:
-                    "We manufacture men's coats and tailored outerwear for businesses looking for quality production and consistent finishing.",
-                secdescription:
-                    "From sophisticated business outerwear to fashion-led seasonal collections, we can manufacture styles according to the specifications agreed for your order."
+                    "We manufacture blazers with attention to garment structure, panel alignment, lining and finishing. Styles can be developed to suit formal collections, occasion wear and institutional requirements.",
+
             },
             {
                 id: "03",
-                name: "Custom Manufacturing for Your Brand",
+                name: "Waistcoats / Vests",
                 description:
-                    "Every brand serves a different customer. That is why garment manufacturing should not be limited to a one-size-fits-all approach.",
-                secdescription:
-                    "For brands developing their own collections, customised manufacturing helps create a product that reflects your positioning rather than simply purchasing generic ready-made stock. For brands developing their own collections, customised manufacturing helps create a product that reflects your positioning rather than simply purchasing generic ready- made stock."
+                    "Our waistcoat manufacturing focuses on balanced shaping, accurate button placement and neat finishing. Garments can be produced as standalone pieces or coordinated with trousers and blazers.",
+
+            },
+            {
+                id: "04",
+                name: "Modi Jackets",
+                description:
+                    "We manufacture Modi jackets with distinctive band collars, structured fronts and carefully finished details. Designs can be developed for traditional, festive and contemporary formal collections.",
+            },
+            {
+                id: "05",
+                name: "Shirts",
+                description:
+                    "We manufacture formal shirts with attention to collar construction, cuff detailing and consistent fit. Fabric, sleeve, pocket and fastening specifications can be aligned with the buyer’s collection.",
             }
         ],
 
@@ -50,61 +60,57 @@ const products = {
         ]
     },
 
-    "MensTrousers": {
+    "CorporateWear": {
         type: "category",
 
-        breadcrumb: "Men’s Trousers Manufacturer",
-        title: "Men’s Trousers Manufacturer",
-        heading: "Men’s Trousers Manufacturer",
+        breadcrumb: "Corporate Wear Manufacturer",
+        title: "Corporate Wear Manufacturer",
+        heading: "Corporate Wear Manufacturer",
 
         description:
             "Looking for a reliable men’s trousers manufacturer for your brand, retail business, wholesale requirements, corporate uniforms, or private-label collection?",
 
         intro:
-            "Vastra International manufactures quality men’s trousers designed for modern business, formal, casual, and fashion markets. From classic formal trousers to contemporary slim-fit and casual styles, we focus on fit, comfort, fabric quality, stitching, finishing, and consistent production.",
+            "We manufacture coordinated corporate clothing for businesses, organisations and uniform suppliers. Our production focuses on a consistent appearance across garments, helping buyers maintain their brand identity throughout team attire.",
 
         image: "/products/shorts.jpg",
 
         styles: [
             {
                 id: "01",
-                name: "Men’s Trouser Manufacturer",
+                name: "Trousers",
                 description:
-                    "The right pair of trousers combines appearance, comfort, fit, and durability. From waistband construction and pocket detailing to stitching, fabric selection, and finishing, every element contributes to how the finished garment looks and performs.",
-                secdescription:
-                    "Whether you require timeless business trousers or contemporary fashion-led styles, we can manufacture products according to your target market and product specifications."
+                    "We manufacture corporate trousers to match workplace dress requirements and coordinated uniform ranges. Consistent sizing, fabric selection and finishing help maintain a uniform appearance across teams.",
+                // secdescription:
+                //     "Whether you require timeless business trousers or contemporary fashion-led styles, we can manufacture products according to your target market and product specifications."
             },
             {
                 id: "02",
-                name: "Formal Men’s Trousers Manufacturer",
+                name: "Blazers",
                 description:
-                    "The right pair of trousers combines appearance, comfort, fit, and durability.",
-                secdescription:
-                    "From waistband construction and pocket detailing to stitching, fabric selection, and finishing, every element contributes to how the finished garment looks and performs. We can manufacture according to your preferred design specifications, size charts, fabrics, trims, and branding requirements."
+                    "Our corporate blazers are manufactured to support a professional company identity. Construction, colour and styling can be coordinated with other garments in the corporate range.",
+
             },
             {
                 id: "03",
-                name: "Casual Men’s Trousers Manufacturer",
+                name: "Waistcoats / Vests",
                 description:
-                    "Casual trousers require the right balance between style, comfort, and practicality. We manufacture casual trouser styles suitable for fashion brands, retailers, wholesalers, and private-label businesses.",
-                secdescription:
-                    "Product details can be customised according to agreed requirements, including pockets, waistband design, trims, colours, fabrics, and finishing."
+                    "We manufacture waistcoats for hospitality, reception, service and other corporate roles. Designs can be coordinated with shirts and trousers to create a distinctive team uniform.",
+
             },
             {
                 id: "04",
-                name: "Corporate & Uniform Trousers Manufacturer",
+                name: "Modi Jackets",
                 description:
-                    "Corporate and uniform trousers require consistency, comfort, durability, and professional presentation.Manufacturing can be discussed according to your required fabric, colour, sizing, quantity, and product specifications.",
-                secdescription:
-                    "Manufacturing can be discussed according to your required fabric, colour, sizing, quantity, and product specifications."
+                    "We manufacture corporate Modi jackets for organisations seeking a distinctive alternative to conventional jackets. Band-collar styling and coordinated colours create a recognisable professional look.",
+
             },
             {
                 id: "05",
-                name: "Custom Men’s Trouser Manufacturing",
+                name: "Shirts",
                 description:
-                    "Every menswear brand has its own customer profile and product positioning.",
-                secdescription:
-                    "That is why we offer manufacturing based on your approved specifications rather than limiting buyers to standard ready-made styles. Our objective is to help buyers develop trousers that suit their brand identity, target customer, and price segment."
+                    "We manufacture corporate shirts for office teams and customer-facing personnel. Production can follow specified colours, fits and design details to maintain consistency across the workforce.",
+
             },
         ],
 
@@ -117,44 +123,76 @@ const products = {
         ]
     },
 
-    "NehruJacket": {
+    "Uniforms": {
         type: "category",
 
-        breadcrumb: "Nehru Jacket Manufacturer",
-        title: "Nehru Jacket Manufacturer",
-        heading: "Nehru Jacket Manufacturer",
+        breadcrumb: "Uniforms",
+        title: "Uniforms",
+        heading: "Uniforms",
 
         description:
             "Looking for a reliable Nehru jacket manufacturer for your menswear brand, retail business, weddingwear collection, wholesale requirements, corporate uniforms, or private-label range?",
 
         intro:
-            "At Vastra International manufactures quality men’s Nehru jackets designed for formal wear, festive occasions, weddings, corporate use, ethnicwear collections, and contemporary fashion markets.",
+            "We manufacture uniforms for schools, institutions and team-based organisations. Our range covers everyday clothing, formal layers and activity wear, with attention to consistent sizing and coordinated garment specifications.",
 
         image: "/products/shorts.jpg",
 
         styles: [
             {
                 id: "01",
-                name: "Formal & Contemporary Nehru Jackets",
+                name: "Trousers",
                 description:
-                    "Nehru jackets are increasingly used beyond traditional ethnic wear.",
-                secdescription:
-                    "Clean silhouettes, solid colours, subtle textures, and contemporary fabrics can make the garment suitable for business events, receptions, premium hospitality, formal occasions, and smart-casual menswear."
+                    "We manufacture uniform trousers according to institutional requirements for fit, colour and construction. Attention to waistbands, pockets and seam finishing supports practical everyday wear.",
             },
             {
                 id: "02",
-                name: "Wedding & Occasion Nehru Jacket Manufacturer",
+                name: "Blazers",
                 description:
-                    "Nehru jackets are widely used for weddings, festive occasions, family functions, receptions, and formal celebrations. For occasion wear collections, styling and fabric selection play an important role in creating a premium appearance.",
+                    "We manufacture school and institutional blazers with structured construction and coordinated styling. Designs can follow the organisation’s specified colours, detailing and uniform standards.",
 
             },
             {
                 id: "03",
-                name: "Formal & Contemporary Nehru Jackets",
+                name: "Shirts",
                 description:
-                    "Nehru jackets are increasingly used beyond traditional ethnicwear.",
-                secdescription:
-                    "Clean silhouettes, solid colours, subtle textures, and contemporary fabrics can make the garment suitable for business events, receptions, premium hospitality, formal occasions, and smart-casual menswear."
+                    "Our uniform shirts are manufactured with consistent collars, sleeves and pocket placement. Production follows the required sizing and design specifications for a cohesive institutional appearance.",
+            },
+            {
+                id: "04",
+                name: "T-Shirts",
+                description:
+                    "We manufacture uniform T-shirts for sports, activities and team programmes. Neckline, sleeve and colour specifications can be coordinated with the wider uniform range.",
+            },
+            {
+                id: "05",
+                name: "Track Pants",
+                description:
+                    "We manufacture track pants for school sportswear and team activity uniforms. Waistband construction, fit and pocket details can be developed according to the intended use.",
+            },
+            {
+                id: "06",
+                name: "Skirts",
+                description:
+                    "We manufacture uniform skirts in specified lengths, silhouettes and pleat patterns. Consistent construction helps maintain a coordinated appearance across school and institutional uniforms.",
+            },
+            {
+                id: "07",
+                name: "Shorts",
+                description:
+                    "We manufacture uniform shorts for daily school wear, sports and outdoor activities. Designs can incorporate the required waistband, pocket and length specifications.",
+            },
+            {
+                id: "08",
+                name: "Pinafores",
+                description:
+                    "We manufacture school pinafores with attention to bodice shaping, skirt construction and fastening details. Production follows the institution’s requirements for fit, colour and overall styling.",
+            },
+            {
+                id: "09",
+                name: "Skorts",
+                description:
+                    "We manufacture skorts that combine an outer skirt with integrated shorts. Garment construction is developed to meet the fit and coverage requirements of school and activity uniforms.",
             },
         ],
 
@@ -167,29 +205,46 @@ const products = {
         ]
     },
 
-    "MensTshirt": {
+    "Workwear": {
         type: "category",
 
-        breadcrumb: "Mens Tshirt Manufacturer",
-        title: "Mens Tshirt Manufacturer",
-        heading: "Mens Tshirt Manufacturer",
+        breadcrumb: "Workwear",
+        title: "Workwear",
+        heading: "Workwear",
 
         description:
             "Looking for a reliable Mens Tshirt manufacturer for your menswear brand, retail business,  collection, wholesale requirements, corporate uniforms, or private-label range?",
 
         intro:
-            "Men’s T-shirts are one of the most versatile and high-demand categories in modern apparel. From everyday basics and fashion collections to sportswear, promotional clothing, uniforms, and private-label ranges, the right T-shirt combines comfort, fit, fabric quality, durability, and commercial appeal.",
+            "We manufacture role-specific workwear for industrial, healthcare, laboratory and security settings. Production follows the buyer’s garment specifications, with attention to functional construction, fit and a consistent professional appearance.",
 
         image: "/products/shorts.jpg",
 
         styles: [
             {
                 id: "01",
-                name: "Custom Men’s T-Shirt Manufacturing",
+                name: "Coveralls",
                 description:
-                    "We can manufacture T-shirts according to your approved designs and material requirement. If you already have a technical pack, sample, artwork, or reference garment, it can be used as the basis for product development. ",
-
-            }
+                    "We manufacture coveralls with coordinated upper and lower garment construction for industrial and maintenance roles. Fabric, closures, pockets and sizing are specified according to the intended working environment.",
+            },
+            {
+                id: "02",
+                name: "Medical Scrubs",
+                description:
+                    "We manufacture scrub tops and trousers for healthcare teams and medical uniform suppliers. Designs can include specified necklines, pocket layouts and waistbands to suit different roles.",
+            },
+            {
+                id: "03",
+                name: "Lab Coats",
+                description:
+                    "We manufacture lab coats for laboratory, clinical and technical workplaces. Coat length, sleeve style, closures and pocket placement can be aligned with the buyer’s requirements.",
+            },
+            {
+                id: "04",
+                name: "Security Uniforms",
+                description:
+                    "We manufacture coordinated security uniforms that support clear personnel identification. Shirts, trousers and garment details can follow the organisation’s prescribed uniform design.",
+            },
         ],
 
         otherCategories: [
@@ -201,29 +256,58 @@ const products = {
         ]
     },
 
-    "LadiesBlazer": {
+    "CasualWear": {
         type: "category",
 
-        breadcrumb: "Ladies Blazer",
-        title: "Ladies Blazer",
-        heading: "Ladies Blazer",
+        breadcrumb: "Casual Wear",
+        title: "Casual Wear",
+        heading: "Casual Wear",
 
         description:
             "Ladies’ blazers are a key part of modern womenswear, combining structure, style, and versatility for business, formal, fashion, hospitality, uniform, and smart-casual markets.",
 
         intro:
-            "At Vastra International, we manufacture ladies’ blazers with a focus on fit, fabric, tailoring, comfort, finishing, and consistency. From classic office blazers to contemporary fashion-led styles, every garment can be developed according to approved designs, measurements, fabrics, colours, and branding requirements.",
+            "We manufacture casual garments for apparel brands, retailers and bulk buyers. Our range includes woven and knitted everyday styles, produced with attention to fit, stitching and consistent finishing across the collection.",
 
         image: "/products/shorts.jpg",
 
         styles: [
             {
                 id: "01",
-                name: "Corporate & Uniform Ladies’ Blazers",
+                name: "Chinos",
                 description:
-                    "Ladies’ blazers are widely used in corporate uniforms, hospitality, retail, aviation, education, and service industries. Customisation can include company colours, logos, embroidery, branded buttons, custom trims, and approved size charts. ",
-
-            }
+                    "We manufacture chinos with clean styling and carefully constructed waistbands, pockets and seams. Fit and fabric specifications can be developed to suit different casualwear collections.",
+            },
+            {
+                id: "02",
+                name: "Jeans",
+                description:
+                    "We manufacture jeans with attention to denim construction, pocket detailing and seam finishing. Silhouettes and garment details can be aligned with the buyer’s design specifications.",
+            },
+            {
+                id: "03",
+                name: "Cargo Pants",
+                description:
+                    "We manufacture cargo pants with utility-inspired styling and functional pocket layouts. Production focuses on accurate pocket placement, consistent fit and neatly finished construction.",
+            },
+            {
+                id: "04",
+                name: "Shorts",
+                description:
+                    "We manufacture casual shorts in a range of silhouettes for everyday and leisure collections. Length, waistband, pocket and fabric specifications can follow the buyer’s requirements.",
+            },
+            {
+                id: "05",
+                name: "T-Shirts — Polo & Round Neck",
+                description:
+                    "We manufacture polo and round-neck T-shirts for casualwear collections and bulk requirements. Attention to collars, necklines, sleeve construction and seams helps maintain a consistent finish.",
+            },
+            {
+                id: "06",
+                name: "Casual Shirts",
+                description:
+                    "We manufacture casual shirts with styling suited to relaxed everyday collections. Collar types, sleeve lengths, pockets and fit can be developed according to the buyer’s specifications.",
+            },
         ],
 
         otherCategories: [
