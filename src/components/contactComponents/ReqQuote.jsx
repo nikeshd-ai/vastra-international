@@ -160,7 +160,7 @@ const ReqQuote = () => {
 
             <div className="container-fluid">
 
-                <div className="row g-5">
+                <div className="row">
 
                     <div className="col-lg-12">
 
