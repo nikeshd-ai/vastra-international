@@ -77,23 +77,38 @@ const Footer = () => {
                                 <a href="https://maps.app.goo.gl/M1iRaAH2wfizb8es5" target="_blank" rel="noopener noreferrer">
                                     <p><strong>Head office: <br /></strong>
 
-                                        Ground Floor, CHS, MULUND SIDDHIVINAYAK, A1, Tata Colony, Mulund East, Maharashtra 400081.</p>
+                                        Ground Floor, MULUND SIDDHIVINAYAK, CHS, A1, Tata Colony, Mulund East, Maharashtra 400081.</p>
                                 </a>
                             </div>
 
                             <div className="footer-contact-item d-flex align-items-center">
                                 <img src="/icons/call.png" alt="" />
 
-                                <a href="tel:+912240048080" target="_blank" >
-                                    +91 22 4004 8080
+                                <a href="tel:+919324281489" target="_blank" >
+                                    +91 93 2428 1489
                                 </a>
                             </div>
+
 
                             <div className="footer-contact-item d-flex align-items-center">
                                 <img src="/icons/mail.png" alt="" />
 
-                                <a href="mailto:sales@vastrainternational.com" target="_blank" >
-                                    sales@vastrainternational.com
+                                <a href="mailto:piyer@vastrainternational.com" target="_blank" >
+                                    piyer@vastrainternational.com
+                                </a>
+                            </div>
+                            <div className="footer-contact-item d-flex align-items-center">
+                                <img src="/icons/call.png" alt="" />
+
+                                <a href="tel:+919769541114" target="_blank" >
+                                    +91 97 6954 1114
+                                </a>
+                            </div>
+                            <div className="footer-contact-item d-flex align-items-center">
+                                <img src="/icons/mail.png" alt="" />
+
+                                <a href="mailto:vastra.operations@gmail.com" target="_blank" >
+                                    vastra.operations@gmail.com
                                 </a>
                             </div>
                         </div>

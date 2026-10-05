@@ -344,29 +344,27 @@ const ReqQuote = () => {
                                                 Select category
                                             </option>
 
-                                            <option value="Blazers">
-                                                Blazers
+                                            <option value="Formal Wear">
+                                                Formal Wear
                                             </option>
 
-                                            <option value="Shirts">
-                                                Shirts
+                                            <option value="Corporate Wears">
+                                                Corporate Wears
                                             </option>
 
-                                            <option value="Trousers">
-                                                Trousers
+                                            <option value="Uniforms">
+                                                Uniforms
                                             </option>
 
-                                            <option value="Polos">
-                                                Polos
+                                            <option value="Workwear">
+                                                Workwear
                                             </option>
 
-                                            <option value="T-Shirts">
-                                                T-Shirts
+                                            <option value="Casual Wear">
+                                                Casual Wear
                                             </option>
 
-                                            <option value="Shorts">
-                                                Shorts
-                                            </option>
+
 
                                         </select>
 
@@ -486,10 +484,7 @@ const ReqQuote = () => {
                                     </button>
 
 
-                                    <span className="quote-note">
-                                        Reply within 1 working day · MOQ from
-                                        300 pcs per style
-                                    </span>
+
 
                                 </div>
 

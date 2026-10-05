@@ -7,7 +7,7 @@ const products = {
         heading: "Formal Wear",
 
         description:
-            "Looking for a reliable men’s coat and blazer manufacturer for your brand, retail business, wholesale requirements, or corporate collection?",
+            "We manufacture formal garments for apparel brands, retailers and institutional buyers. Our range includes shirts, trousers and structured layers, with a focus on precise stitching, consistent sizing and a polished finish.",
 
         intro:
             "We manufacture formal garments for apparel brands, retailers and institutional buyers. Our range includes shirts, trousers and structured layers, with a focus on precise stitching, consistent sizing and a polished finish.",
@@ -68,7 +68,7 @@ const products = {
         heading: "Corporate Wear Manufacturer",
 
         description:
-            "Looking for a reliable men’s trousers manufacturer for your brand, retail business, wholesale requirements, corporate uniforms, or private-label collection?",
+            "We manufacture coordinated corporate clothing for businesses, organisations and uniform suppliers. Our production focuses on a consistent appearance across garments, helping buyers maintain their brand identity throughout team attire.",
 
         intro:
             "We manufacture coordinated corporate clothing for businesses, organisations and uniform suppliers. Our production focuses on a consistent appearance across garments, helping buyers maintain their brand identity throughout team attire.",

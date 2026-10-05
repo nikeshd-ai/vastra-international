@@ -139,9 +139,9 @@ const ContactDetails = () => {
 
                             <div className="col-md-4">
                                 <div className="unit-card">
-                                    <h5>Malad (E)</h5>
+                                    <h5>Mulund</h5>
                                     <p>
-                                        Office, sampling & shirting line
+                                        Head office
                                     </p>
                                 </div>
                             </div>
@@ -150,19 +150,12 @@ const ContactDetails = () => {
                                 <div className="unit-card">
                                     <h5>Bhiwandi</h5>
                                     <p>
-                                        Blazers, coats & trousers
+                                        Manufacturing Unit
                                     </p>
                                 </div>
                             </div>
 
-                            <div className="col-md-4">
-                                <div className="unit-card">
-                                    <h5>Tarapur</h5>
-                                    <p>
-                                        Knits — tees, polos, shorts
-                                    </p>
-                                </div>
-                            </div>
+
 
                         </div>
 

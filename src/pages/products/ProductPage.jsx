@@ -30,7 +30,8 @@ const ProductPage = () => {
                 breadcrumb={product.breadcrumb}
                 title={product.title}
                 heading={product.heading}
-                description={product.description}
+                // description={product.description}
+                description={product.intro}
             />
 
             <section className="category-styles-section">

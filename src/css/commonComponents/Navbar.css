@@ -252,10 +252,6 @@ body.mobile-menu-open {
 
 @media (max-width: 991.98px) {
 
-    /* -----------------------------------------
-       Navbar
-    ----------------------------------------- */
-
     .navbar {
         position: sticky !important;
 
@@ -267,10 +263,6 @@ body.mobile-menu-open {
         z-index: 1050;
     }
 
-
-    /* -----------------------------------------
-       Navbar Toggler / Hamburger
-    ----------------------------------------- */
 
     .navbar .navbar-toggler {
         position: relative;
@@ -289,11 +281,6 @@ body.mobile-menu-open {
         outline: none;
         box-shadow: none;
     }
-
-
-    /* -----------------------------------------
-       Mobile Menu
-    ----------------------------------------- */
 
     .navbar .navbar-collapse {
 
