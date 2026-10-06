@@ -132,6 +132,12 @@ const Footer = () => {
                 </div>
 
             </footer>
+            <div className="sticky-contact">
+                <a href="tel:+919324281489" target="_blank" rel="noopener noreferrer">
+                    <img src="/icons/whatsapp.png" alt="Call" />
+                </a>
+
+            </div>
         </>
     );
 };

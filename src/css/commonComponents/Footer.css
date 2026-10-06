@@ -265,3 +265,22 @@
         font-size: 13px;
     }
 }
+
+.sticky-contact {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 999;
+}
+
+@media (max-width: 767px) {
+    .sticky-contact {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+.sticky-contact img {
+    width: 40px;
+
+}
