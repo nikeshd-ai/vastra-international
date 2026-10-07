@@ -23,7 +23,7 @@ const manufactureCards = [
     {
         id: 3,
         img: "/what-we-card/whatwecard-third.png",
-        title: "School & Institutional Uniforms",
+        title: "Uniforms",
         description:
             "Uniform apparel developed for schools and institutional requirements.",
         var: "School Shirts · Trousers · Skirts",
@@ -47,24 +47,24 @@ const manufactureCards = [
         var: "Casual Trousers · Chinos · Shorts",
         type: "bottom",
     },
-    {
-        id: 6,
-        img: "/what-we-card/whatwecard-sixth.png",
-        title: "Branded & Private-Label Apparel",
-        description:
-            "Apparel developed around buyer specifications for brands",
-        var: "Custom Styles · Buyer Specifications",
-        type: "bottom",
-    },
-    {
-        id: 7,
-        img: "/what-we-card/whatwecard-seventh.png",
-        title: "Work Wear",
-        description:
-            "Practical workwear solutions designed for organisations that need consistent apparel",
-        var: "Industrial Wear · Staff Uniforms",
-        type: "bottom",
-    },
+    // {
+    //     id: 6,
+    //     img: "/what-we-card/whatwecard-sixth.png",
+    //     title: "Branded & Private-Label Apparel",
+    //     description:
+    //         "Apparel developed around buyer specifications for brands",
+    //     var: "Custom Styles · Buyer Specifications",
+    //     type: "bottom",
+    // },
+    // {
+    //     id: 7,
+    //     img: "/what-we-card/whatwecard-seventh.png",
+    //     title: "Work Wear",
+    //     description:
+    //         "Practical workwear solutions designed for organisations that need consistent apparel",
+    //     var: "Industrial Wear · Staff Uniforms",
+    //     type: "bottom",
+    // },
 ];
 
 const WhatWeManufacture = () => {
@@ -161,7 +161,7 @@ const WhatWeManufacture = () => {
 
                     {bottomCards.map((card) => (
                         <div
-                            className="col-lg-3 col-md-3 col-sm-6 col-12 mb-lg-0 mb-4"
+                            className="col-lg-6 col-md-6 col-sm-6 col-12 mb-lg-0 mb-4"
                             key={card.id}
                         >
                             <div className="card">

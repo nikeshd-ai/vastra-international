@@ -34,13 +34,12 @@ const Footer = () => {
                             <h4>PRODUCTS</h4>
 
                             <ul className="list-unstyled">
-                                <li><Link to="/products/MensBlazer">Men's Coats</Link></li>
-                                <li><Link to="/products/LadiesBlazer">Blazers</Link></li>
-                                <li><Link to="/products/MensTshirt">Formal Shirts</Link></li>
-                                <li><Link to="/products/MensTrousers">Casual Trousers</Link></li>
-                                <li><Link to="/products/MensTshirt">Cotton T-Shirts</Link></li>
-                                <li><Link to="/products/MensBlazer">Shorts</Link></li>
-                                <li><Link to="/products/MensBlazer">School & Hospital Uniforms</Link></li>
+                                <li><Link to="/products/FormalWear">Formal Wear</Link></li>
+                                <li><Link to="/products/CorporateWear">Corporate Wears</Link></li>
+                                <li><Link to="/products/Uniforms">Uniforms</Link></li>
+                                <li><Link to="/products/Workwear">Workwear</Link></li>
+                                <li><Link to="/products/CasualWear">Casual Wear</Link></li>
+
 
                             </ul>
                         </div>

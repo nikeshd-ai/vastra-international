@@ -12,7 +12,13 @@ const products = {
         intro:
             "We manufacture formal garments for apparel brands, retailers and institutional buyers. Our range includes shirts, trousers and structured layers, with a focus on precise stitching, consistent sizing and a polished finish.",
 
-        image: "/products/shorts.jpg",
+        images: [
+            "/products/FormalWear/trousers.jpg",
+            "/products/FormalWear/blazer.jpg",
+            "/products/FormalWear/waist-coat.jpg",
+            "/products/FormalWear/mod-jaclet.jpg",
+            "/products/FormalWear/shirt.jpg",
+        ],
 
         styles: [
             {
@@ -73,7 +79,13 @@ const products = {
         intro:
             "We manufacture coordinated corporate clothing for businesses, organisations and uniform suppliers. Our production focuses on a consistent appearance across garments, helping buyers maintain their brand identity throughout team attire.",
 
-        image: "/products/shorts.jpg",
+        images: [
+            "/products/FormalWear/trousers.jpg",
+            "/products/FormalWear/blazer.jpg",
+            "/products/FormalWear/waist-coat.jpg",
+            "/products/FormalWear/mod-jaclet.jpg",
+            "/products/FormalWear/shirt.jpg",
+        ],
 
         styles: [
             {
@@ -136,7 +148,17 @@ const products = {
         intro:
             "We manufacture uniforms for schools, institutions and team-based organisations. Our range covers everyday clothing, formal layers and activity wear, with attention to consistent sizing and coordinated garment specifications.",
 
-        image: "/products/shorts.jpg",
+        images: [
+            "/products/Uniforms/Trousers.jpg",
+            "/products/Uniforms/blazers.jpg",
+            "/products/Uniforms/shirt.jpg",
+            "/products/Uniforms/tshirt.jpg",
+            "/products/Uniforms/trackpants.jpg",
+            "/products/Uniforms/skirts.jpg",
+            "/products/Uniforms/shorts.jpg",
+            "/products/Uniforms/pinafores.jpg",
+            "/products/Uniforms/skorts.jpg",
+        ],
 
         styles: [
             {
@@ -218,7 +240,12 @@ const products = {
         intro:
             "We manufacture role-specific workwear for industrial, healthcare, laboratory and security settings. Production follows the buyer’s garment specifications, with attention to functional construction, fit and a consistent professional appearance.",
 
-        image: "/products/shorts.jpg",
+        images: [
+            "/products/Workwear/coveralls.jpg",
+            "/products/Workwear/scrubs.jpg",
+            "/products/Workwear/labcoats.jpg",
+            "/products/Workwear/security-uniform.jpg"
+        ],
 
         styles: [
             {
@@ -269,7 +296,15 @@ const products = {
         intro:
             "We manufacture casual garments for apparel brands, retailers and bulk buyers. Our range includes woven and knitted everyday styles, produced with attention to fit, stitching and consistent finishing across the collection.",
 
-        image: "/products/shorts.jpg",
+        images: [
+            "/products/casuals/chinos.jpg",
+            "/products/casuals/jeans.jpg",
+            "/products/casuals/cargo-pants.jpg",
+            "/products/casuals/shorts.jpg",
+            "/products/casuals/tshirt.jpg",
+            "/products/casuals/casual-shirt.jpg",
+
+        ],
 
         styles: [
             {

@@ -71,15 +71,15 @@ const ProductPage = () => {
 
 
 
-                                    <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
-                                        <SwiperSlide><img
-                                            src={product.image}
-                                            alt={product.heading}
-                                        /></SwiperSlide>
-                                        <SwiperSlide><img
-                                            src={product.image}
-                                            alt={product.heading}
-                                        /></SwiperSlide>
+                                    <Swiper navigation={true} modules={[Navigation]} loop={true} className="mySwiper">
+                                        {product.images.map((image, index) => (
+                                            <SwiperSlide key={index}>
+                                                <img
+                                                    src={image}
+                                                    alt={`${product.heading} ${index + 1}`}
+                                                />
+                                            </SwiperSlide>
+                                        ))}
 
                                     </Swiper>
 
