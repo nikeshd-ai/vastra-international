@@ -124,7 +124,7 @@ const ContactDetails = () => {
                             </div> */}
 
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.2438576919603!2d72.8463758348877!3d19.184548500000012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b6fd42a65af1%3A0x85e45a42e0a8e0d2!2sOMCON%20REAL%20ESTATE%20DEVELOPERS!5e0!3m2!1sen!2sin!4v1788770917837!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.6305131994436!2d72.96112007395357!3d19.16551764915863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b8ec78b69d33%3A0x8330e496127a67cc!2sMulund%20Siddhivinayak%20CHS!5e1!3m2!1sen!2sin!4v1791352739836!5m2!1sen!2sin"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
@@ -133,6 +133,7 @@ const ContactDetails = () => {
                                 referrerPolicy="no-referrer-when-downgrade"
                                 title="Google Map"
                             ></iframe>
+
                         </div>
 
 
