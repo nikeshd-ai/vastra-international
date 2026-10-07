@@ -94,9 +94,9 @@ const Navbar = () => {
                                         src="/icons/call_icon.png"
                                         alt=""
                                     />
-                                    <a href="tel:+912240048080">
+                                    <a href="tel:+919324281489">
 
-                                        +91 22 4004 8080
+                                        +91 93 2428 1489
                                     </a>
                                 </div>
                                 <div className="detail">
@@ -105,9 +105,9 @@ const Navbar = () => {
                                         src="/icons/mail_icon.png"
                                         alt=""
                                     />
-                                    <a href="mailto:sales@vastrainternational.com">
+                                    <a href="mailto:vastra.operations@gmail.com">
 
-                                        sales@vastrainternational.com
+                                        vastra.operations@gmail.com
                                     </a>
                                 </div>
                             </div>

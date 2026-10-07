@@ -23,7 +23,7 @@ const ContactDetails = () => {
                                     <h6>OFFICE & UNIT 1</h6>
 
                                     <p>
-                                        Ground Floor, CHS, MULUND SIDDHIVINAYAK, A1, Tata Colony, Mulund East, Maharashtra 400081
+                                        Ground Floor, MULUND SIDDHIVINAYAK, CHS, A1, Tata Colony, Mulund East, Maharashtra 400081.
                                     </p>
                                 </div>
                             </div>
@@ -38,9 +38,9 @@ const ContactDetails = () => {
                                     <h6>PHONE & WHATSAPP</h6>
 
                                     <p>
-                                        +91 22 4004 8080
+                                        +91 93 2428 1489
                                         <br />
-                                        +91 98200 45678
+                                        +91 97 6954 1114
                                     </p>
                                 </div>
                             </div>
@@ -55,7 +55,9 @@ const ContactDetails = () => {
                                     <h6>EMAIL</h6>
 
                                     <p>
-                                        sales@vastrainternational.com
+                                        piyer@vastrainternational.com
+                                        <br />
+                                        vastra.operations@gmail.com
                                     </p>
                                 </div>
                             </div>

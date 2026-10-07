@@ -7,6 +7,16 @@ import ContactBanner from "../../components/contactComponents/ContactBanner";
 
 import products from "../../data/Products";
 
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import { Navigation } from 'swiper/modules';
+
 const ProductPage = () => {
 
     const { slug } = useParams();
@@ -59,10 +69,19 @@ const ProductPage = () => {
 
                                 <div className="category-product-image">
 
-                                    <img
-                                        src={product.image}
-                                        alt={product.heading}
-                                    />
+
+
+                                    <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                                        <SwiperSlide><img
+                                            src={product.image}
+                                            alt={product.heading}
+                                        /></SwiperSlide>
+                                        <SwiperSlide><img
+                                            src={product.image}
+                                            alt={product.heading}
+                                        /></SwiperSlide>
+
+                                    </Swiper>
 
                                 </div>
 

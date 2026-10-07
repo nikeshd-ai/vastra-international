@@ -44,6 +44,12 @@
     font-size: 13px;
 }
 
+@media (max-width: 992px) {
+    .quote-input::placeholder {
+        font-size: 10px;
+    }
+}
+
 .quote-input:focus {
     border-color: #812329;
 }

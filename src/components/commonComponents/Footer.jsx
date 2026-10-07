@@ -84,9 +84,14 @@ const Footer = () => {
                             <div className="footer-contact-item d-flex align-items-center">
                                 <img src="/icons/call.png" alt="" />
 
-                                <a href="tel:+919324281489" target="_blank" >
-                                    +91 93 2428 1489
-                                </a>
+                                <div className="div d-flex gap-2">
+                                    <a href="tel:919324281489" target="_blank" >
+                                        +91 93 2428 1489 /
+                                    </a>
+                                    <a href="tel:919769541114" target="_blank" >
+                                        +91 97 6954 1114
+                                    </a>
+                                </div>
                             </div>
 
 
@@ -97,13 +102,7 @@ const Footer = () => {
                                     piyer@vastrainternational.com
                                 </a>
                             </div>
-                            <div className="footer-contact-item d-flex align-items-center">
-                                <img src="/icons/call.png" alt="" />
 
-                                <a href="tel:+919769541114" target="_blank" >
-                                    +91 97 6954 1114
-                                </a>
-                            </div>
                             <div className="footer-contact-item d-flex align-items-center">
                                 <img src="/icons/mail.png" alt="" />
 
