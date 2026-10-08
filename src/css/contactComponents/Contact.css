@@ -20,7 +20,17 @@
     border-bottom: 1px solid #ddd;
 }
 
-.contact-icon {
+.contact-info-item:first-child {
+    border-top: 2px solid transparent;
+}
+
+@media (min-width:768px) and (max-width:1076px) {
+    .footer-contact-item .div {
+        Flex-direction: column;
+    }
+}
+
+.footer-contact-item .contact-icon {
     width: 25px;
     min-width: 25px;
     color: #8b2028;

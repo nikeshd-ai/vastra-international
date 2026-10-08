@@ -9,7 +9,7 @@ const Navbar = () => {
         isProductsHoverDisabled,
         setIsProductsHoverDisabled,
     ] = useState(false);
-    console.log("Menu Open and Close: ", isMenuOpen);
+    // console.log("Menu Open and Close: ", isMenuOpen);
     /* * Active Products link */ const isProductActive =
         location.pathname.startsWith("/products/") ||
         location.pathname.startsWith("/productdetail");

@@ -19,7 +19,7 @@ const ContactBanner = ({
                     <div className="col-lg-6">
                         <div className="common-title">
 
-                            <h6>{title}</h6>
+                            {/* <h6>{title}</h6> */}
 
                             <h1>{heading}</h1>
 

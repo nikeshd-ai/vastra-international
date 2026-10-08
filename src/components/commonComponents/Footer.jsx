@@ -83,7 +83,7 @@ const Footer = () => {
                             <div className="footer-contact-item d-flex align-items-center">
                                 <img src="/icons/call.png" alt="" />
 
-                                <div className="div d-flex gap-2">
+                                <div className="div d-flex gap-2 ">
                                     <a href="tel:919324281489" target="_blank" >
                                         +91 93 2428 1489 /
                                     </a>
