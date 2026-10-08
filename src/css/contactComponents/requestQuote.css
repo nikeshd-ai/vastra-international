@@ -21,6 +21,11 @@
     letter-spacing: 1px;
 }
 
+.modal-title {
+    font-family: var(--big-font);
+    font-weight: 600;
+}
+
 .quote-label span {
     color: #812329;
 }
@@ -94,6 +99,7 @@ select.quote-input {
 .quote-textarea:focus {
     border-color: #812329;
 }
+
 
 
 /* SUBMIT */
@@ -355,4 +361,12 @@ select.quote-input {
 .quote-submit-row button:disabled {
     opacity: 0.7;
     cursor: not-allowed;
+}
+
+.select-placeholder {
+    color: #2A1E1B66 !important;
+}
+
+.select-filled {
+    color: #0a0a0a !important;
 }

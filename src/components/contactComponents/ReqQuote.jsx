@@ -293,7 +293,7 @@ const ReqQuote = () => {
                                             name="buyerType"
                                             value={formData.buyerType}
                                             onChange={handleChange}
-                                            className="form-select quote-input"
+                                            className={`form-select quote-input ${formData.buyerType ? " select-filled" : "select-placeholder"}`}
                                         >
                                             <option value="">
                                                 Select buyer type
@@ -337,7 +337,8 @@ const ReqQuote = () => {
                                             onChange={handleChange}
                                             className={`form-select quote-input ${errors.category
                                                 ? "quote-input-error"
-                                                : ""
+                                                : formData.category
+                                                    ? "select-filled" : "select-placeholder"
                                                 }`}
                                         >
                                             <option value="">
@@ -436,7 +437,10 @@ const ReqQuote = () => {
                                             name="neededBy"
                                             value={formData.neededBy}
                                             onChange={handleChange}
-                                            className="form-control quote-input"
+                                            className={`form-control quote-input ${formData.neededBy
+                                                ? "select-filled"
+                                                : "select-placeholder"
+                                                }`}
                                         />
 
                                     </div>
