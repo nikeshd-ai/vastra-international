@@ -1,23 +1,40 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../../css/contactComponents/requestQuote.css";
 
+const initialFormData = {
+    organisation: "",
+    contactPerson: "",
+    email: "",
+    phone: "",
+    buyerType: "",
+    category: "",
+    product: "",
+    quantity: "",
+    neededBy: "",
+    notes: "",
+};
+
 const ReqQuote = () => {
-
-    const [formData, setFormData] = useState({
-        organisation: "",
-        contactPerson: "",
-        email: "",
-        phone: "",
-        buyerType: "",
-        category: "",
-        product: "",
-        quantity: "",
-        neededBy: "",
-        notes: "",
-    });
-
+    const [formData, setFormData] = useState(initialFormData);
     const [errors, setErrors] = useState({});
     const [status, setStatus] = useState("");
+
+    // Reset form when Bootstrap modal is closed
+    useEffect(() => {
+        const modal = document.getElementById("requestQuoteModal");
+
+        const handleModalClose = () => {
+            setFormData(initialFormData);
+            setErrors({});
+            setStatus("");
+        };
+
+        modal?.addEventListener("hidden.bs.modal", handleModalClose);
+
+        return () => {
+            modal?.removeEventListener("hidden.bs.modal", handleModalClose);
+        };
+    }, []);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -36,10 +53,8 @@ const ReqQuote = () => {
         }
     };
 
-
     // Validate form
     const validateForm = () => {
-
         const newErrors = {};
 
         if (!formData.organisation.trim()) {
@@ -61,7 +76,8 @@ const ReqQuote = () => {
         if (!formData.phone.trim()) {
             newErrors.phone = "Phone / WhatsApp number is required";
         } else if (/[a-zA-Z]/.test(formData.phone)) {
-            newErrors.phone = "Phone / WhatsApp number cannot contain letters";
+            newErrors.phone =
+                "Phone / WhatsApp number cannot contain letters";
         }
 
         if (!formData.category) {
@@ -77,10 +93,8 @@ const ReqQuote = () => {
         return Object.keys(newErrors).length === 0;
     };
 
-
     // Handle submit
     const handleSubmit = async (e) => {
-
         e.preventDefault();
 
         setStatus("");
@@ -92,7 +106,6 @@ const ReqQuote = () => {
         }
 
         try {
-
             setStatus("sending");
 
             /*
@@ -103,7 +116,6 @@ const ReqQuote = () => {
              */
 
             console.log("Request Quote Data:", formData);
-
 
             /*
              * Example API request:
@@ -124,36 +136,17 @@ const ReqQuote = () => {
              * }
              */
 
-
             // Temporary success
             await new Promise((resolve) => setTimeout(resolve, 800));
 
             setStatus("success");
 
-            // Clear form
-            setFormData({
-                organisation: "",
-                contactPerson: "",
-                email: "",
-                phone: "",
-                buyerType: "",
-                category: "",
-                product: "",
-                quantity: "",
-                neededBy: "",
-                notes: "",
-            });
-
-            setErrors({});
-
         } catch (error) {
-
             console.error("Form submission error:", error);
 
             setStatus("error");
         }
     };
-
 
     return (
         <div className="request-quote-section">
@@ -293,7 +286,10 @@ const ReqQuote = () => {
                                             name="buyerType"
                                             value={formData.buyerType}
                                             onChange={handleChange}
-                                            className={`form-select quote-input ${formData.buyerType ? " select-filled" : "select-placeholder"}`}
+                                            className={`form-select quote-input ${formData.buyerType
+                                                ? "select-filled"
+                                                : "select-placeholder"
+                                                }`}
                                         >
                                             <option value="">
                                                 Select buyer type
@@ -338,7 +334,8 @@ const ReqQuote = () => {
                                             className={`form-select quote-input ${errors.category
                                                 ? "quote-input-error"
                                                 : formData.category
-                                                    ? "select-filled" : "select-placeholder"
+                                                    ? "select-filled"
+                                                    : "select-placeholder"
                                                 }`}
                                         >
                                             <option value="">
@@ -364,8 +361,6 @@ const ReqQuote = () => {
                                             <option value="Casual Wear">
                                                 Casual Wear
                                             </option>
-
-
 
                                         </select>
 
@@ -486,9 +481,6 @@ const ReqQuote = () => {
                                             : "Request a quote"}
 
                                     </button>
-
-
-
 
                                 </div>
 

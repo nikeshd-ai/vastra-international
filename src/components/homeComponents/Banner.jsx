@@ -1,9 +1,27 @@
 import React from 'react'
 import BannerStrip from './BannerStrip.jsx'
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 
 const Banner = () => {
+
+    useEffect(() => {
+        const modal = document.getElementById("quoteModal");
+
+        const handleModalClose = () => {
+            setFormData(initialFormData);
+            setErrors({});
+        };
+
+        modal?.addEventListener("hidden.bs.modal", handleModalClose);
+
+        return () => {
+            modal?.removeEventListener("hidden.bs.modal", handleModalClose);
+        };
+    }, []);
+
+
     return (
         <>
             <section className="banner">
@@ -30,11 +48,10 @@ const Banner = () => {
                                         className="common-btn"
                                         data-bs-toggle="modal"
                                         data-bs-target="#requestQuoteModal"
+
                                     >
                                         Request a Quote
                                         <img src='/icons/right_arrow.png' />
-
-
                                     </button>
                                     <button className="common-btn transparent">
                                         <Link to="/products/FormalWear">
