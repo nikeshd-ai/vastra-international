@@ -1,6 +1,13 @@
 .why-strip {
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 20px;
+
+}
+
+@media (min-width: 991px) {
+    .why-strip {
+        height: 128px;
+    }
 }
 
 
@@ -22,7 +29,8 @@
 }
 
 .why-strip h5 {
-    font-size: 18px;
-    font-weight: 600;
-    font-family: var(--big-font);
+    font-size: 17px;
+    font-weight: 700;
+    font-family: var(--inter);
+    letter-spacing: -0.1px;
 }
