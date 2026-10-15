@@ -88,7 +88,7 @@ const Navbar = () => {
 
                             <div className="nav-details">
 
-                                <div className="detail">
+                                {/* <div className="detail">
 
                                     <img
                                         src="/icons/call_icon.png"
@@ -97,6 +97,17 @@ const Navbar = () => {
                                     <a href="tel:+919324281489">
 
                                         +91 93 2428 1489
+                                    </a>
+                                </div> */}
+                                <div className="detail">
+
+                                    <img
+                                        src="/icons/mail_icon.png"
+                                        alt=""
+                                    />
+                                    <a href="mailto:piyer@vastrainternational.com">
+
+                                        piyer@vastrainternational.com
                                     </a>
                                 </div>
                                 <div className="detail">

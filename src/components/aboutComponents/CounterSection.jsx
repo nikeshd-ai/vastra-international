@@ -4,7 +4,7 @@ import "../../css/aboutComponents/CounterSection.css";
 const counterData = [
     {
         title: "GROUP FOUNDED IN MUMBAI",
-        value: 2006,
+        value: 2009,
         suffix: "",
     },
     {
