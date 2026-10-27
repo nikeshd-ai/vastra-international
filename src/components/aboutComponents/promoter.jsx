@@ -27,7 +27,7 @@ const Promoter = () => {
                                 </h6>
 
                                 <h2>
-                                    H. Prakash Iyer
+                                    Prakash H. Iyer
                                 </h2>
 
                                 <h5>

@@ -24,7 +24,7 @@ const Footer = () => {
 
                             <p>
                                 Readymade garment manufacturers and
-                                exporters since 2009. Coats, blazers, shirts,
+                                exporters since 2004. Coats, blazers, shirts,
                                 trousers, tees, shorts and complete uniform
                                 programmes.
                             </p>
@@ -123,7 +123,7 @@ const Footer = () => {
                         </p>
 
                         <p>
-                            @design_and_developed by <a href="http://parasightsolutions.com" target="_blank" rel="noopener noreferrer">parasightsolutions.com</a>
+                            @powered by <a href="http://parasightsolutions.com" target="_blank" rel="noopener noreferrer">parasightsolutions.com</a>
                         </p>
 
                     </div>

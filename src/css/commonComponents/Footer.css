@@ -268,19 +268,19 @@
 
 .sticky-contact {
     position: fixed;
-    bottom: 40px;
-    right: 40px;
+    bottom: 50px;
+    right: 20px;
     z-index: 999;
+}
+
+.sticky-contact img {
+    width: 50px;
+
 }
 
 @media (max-width: 767px) {
     .sticky-contact {
-        bottom: 20px;
+        bottom: 40px;
         right: 20px;
     }
-}
-
-.sticky-contact img {
-    width: 40px;
-
 }

@@ -12,7 +12,7 @@ const AboutBanner = () => {
                                     <h6>ABOUT VASTRA INTERNATIONAL</h6>
                                     <h1>Two decades of formal wear, made to a buyer’s brief.</h1>
                                 </div>
-                                <p>Vastra International is a Mumbai-based garment manufacturer and exporter, established in 2009 as part of the Vastra Group. We produce formal wear, corporate apparel, uniforms, workwear and casual garments for quality-conscious domestic and overseas buyers.</p>
+                                <p>Vastra International is a Mumbai-based garment manufacturer and exporter, established in 2004 as part of the Vastra Group. We produce formal wear, corporate apparel, uniforms, workwear and casual garments for quality-conscious domestic and overseas buyers.</p>
                             </div>
                         </div>
                     </div>

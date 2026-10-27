@@ -72,7 +72,7 @@ const ContactDetails = () => {
                                     <h6>WORKING HOURS</h6>
 
                                     <p>
-                                        Mon - Sat · 10:00 - 19:00 IST
+                                        Mon - Sat · 09:30 - 18:00 IST
                                     </p>
                                 </div>
                             </div>
@@ -144,11 +144,19 @@ const ContactDetails = () => {
                                 <div className="unit-card">
                                     <h5>Mulund</h5>
                                     <p>
-                                        Head office
+                                        Market office
                                     </p>
                                 </div>
                             </div>
 
+                            <div className="col-md-4">
+                                <div className="unit-card">
+                                    <h5>Nahur</h5>
+                                    <p>
+                                        Warehouse Unit
+                                    </p>
+                                </div>
+                            </div>
                             <div className="col-md-4">
                                 <div className="unit-card">
                                     <h5>Bhiwandi</h5>

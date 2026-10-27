@@ -7,7 +7,7 @@ const WhyVastra = () => {
             id: 1,
             num: "01",
             title: "Low MOQs that respect your first order",
-            disc: "Most factories at our scale start at 1,000 pieces. We open at 300 pieces per style, so a school, a hospital or a young label can start small and grow."
+            disc: "Most factories at our scale start at 1,000 pieces. We open at 300 pieces per style, per color so a school, a hospital or a young label can start small and grow."
         },
         {
             id: 2,
@@ -19,13 +19,19 @@ const WhyVastra = () => {
             id: 3,
             num: "03",
             title: "Fit sample before you commit",
-            disc: "You approve a physical fit sample and a fabric swatch card before a single metre is cut for bulk.No surprises at delivery."
+            disc: "You approve pre-production sample in terms of physical fit and fabric options, before the order finalisation"
         },
         {
             id: 4,
             num: "04",
             title: "Repeat orders in 15 days",
             disc: "Patterns, graded sizes and approved fabrics stay on file, so your second order ships in half the time of your first."
+        },
+        {
+            id: 5,
+            num: "05",
+            title: "NOS (Never out of Stock)",
+            disc: " We can offer NOS fabric which will be available in short period."
         }
 
     ]
