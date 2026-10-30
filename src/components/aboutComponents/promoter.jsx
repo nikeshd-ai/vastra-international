@@ -11,7 +11,7 @@ const Promoter = () => {
                     <div className="col-lg-5">
                         <div className="promoter-image">
                             <img
-                                src="/about/promoter.jpg"
+                                src="/about/mrprakashiyer.jpg"
                                 alt="H. Prakash Iyer"
                             />
                         </div>

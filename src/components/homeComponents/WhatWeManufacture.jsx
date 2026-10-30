@@ -1,9 +1,12 @@
+
 import React from "react";
+import { Link } from "react-router-dom";
 import "../../css/homeComponents/WhatWeManufacture.css";
 
 const manufactureCards = [
     {
         id: 1,
+        slug: "FormalWear",
         img: "/products/homePageProducts/formalwear.jpg",
         title: "Formal Wear",
         description:
@@ -13,6 +16,7 @@ const manufactureCards = [
     },
     {
         id: 2,
+        slug: "CorporateWear",
         img: "/products/homePageProducts/corporatewear.jpg",
         title: "Corporate Wear",
         description:
@@ -22,6 +26,7 @@ const manufactureCards = [
     },
     {
         id: 3,
+        slug: "Uniforms",
         img: "/products/homePageProducts/uniforms.jpg",
         title: "Uniforms",
         description:
@@ -31,40 +36,24 @@ const manufactureCards = [
     },
     {
         id: 4,
+        slug: "Workwear",
         img: "/products/homePageProducts/work-wear.jpg",
         title: "Work Wear",
         description:
-            "Practical workwear solutions designed for organisations that need consistent apparel",
+            "Practical workwear solutions designed for organisations that need consistent apparel.",
         var: "Industrial Wear · Staff Uniforms",
         type: "bottom",
     },
     {
         id: 5,
+        slug: "CasualWear",
         img: "/products/homePageProducts/casual.jpg",
         title: "Casual Wear",
         description:
-            "Everyday apparel combining practical fabrics, comfortable construction",
+            "Everyday apparel combining practical fabrics and comfortable construction.",
         var: "Casual Trousers · Chinos · Shorts",
         type: "bottom",
     },
-    // {
-    //     id: 6,
-    //     img: "/what-we-card/whatwecard-sixth.png",
-    //     title: "Branded & Private-Label Apparel",
-    //     description:
-    //         "Apparel developed around buyer specifications for brands",
-    //     var: "Custom Styles · Buyer Specifications",
-    //     type: "bottom",
-    // },
-    // {
-    //     id: 7,
-    //     img: "/what-we-card/whatwecard-seventh.png",
-    //     title: "Work Wear",
-    //     description:
-    //         "Practical workwear solutions designed for organisations that need consistent apparel",
-    //     var: "Industrial Wear · Staff Uniforms",
-    //     type: "bottom",
-    // },
 ];
 
 const WhatWeManufacture = () => {
@@ -80,23 +69,40 @@ const WhatWeManufacture = () => {
         (card) => card.type === "bottom"
     );
 
+    const renderCard = (card) => (
+        <Link
+            to={`/products/${card.slug}`}
+            className="card manufacture-card-link"
+            key={card.id}
+            aria-label={`View ${card.title} products`}
+        >
+            <img
+                src={card.img}
+                alt={card.title}
+            />
+
+            <div className="card-body">
+                <div className="card-body-top">
+                    <h5>{card.title}</h5>
+                    <p>{card.description}</p>
+                </div>
+
+                <h6>{card.var}</h6>
+            </div>
+        </Link>
+    );
+
     return (
         <section className="what-we-manufacture">
             <div className="container-fluid">
 
                 {/* Section Heading */}
                 <div className="row mb-lg-5 mb-md-5 mb-4">
-                    <div className="col-lg-6 col-md-6 col-sm-6 col-12 ">
+                    <div className="col-lg-6 col-md-6 col-sm-6 col-12">
                         <div className="common-title">
                             <h6>What We Manufacture</h6>
                             <h2>View by category</h2>
                         </div>
-                    </div>
-
-                    <div className="col-lg-6 col-md-6 col-sm-6 col-12  d-flex justify-content-lg-end justify-content-sm-end justify-content-start align-items-end">
-                        <button className="common-btn transparent">
-                            <a href="#">Full catalogue</a>
-                        </button>
                     </div>
                 </div>
 
@@ -104,85 +110,37 @@ const WhatWeManufacture = () => {
                 <div className="row">
 
                     {/* Featured Card */}
-                    <div className="col-lg-6 col-md-6 col-sm-12 col-12  mb-4">
-                        <div className="card">
-                            <img
-                                src={largeCard.img}
-                                alt={largeCard.title}
-                            />
-
-                            <div className="card-body">
-                                <div className="card-body-top">
-                                    <h5>{largeCard.title}</h5>
-
-                                    <p>{largeCard.description}</p>
-                                </div>
-
-
-                                <h6>{largeCard.var}</h6>
-                            </div>
+                    {largeCard && (
+                        <div className="col-lg-6 col-md-6 col-sm-12 col-12 mb-4">
+                            {renderCard(largeCard)}
                         </div>
-                    </div>
+                    )}
 
                     {/* Top Small Cards */}
                     <div className="col-lg-6 col-md-6 col-sm-12 col-12">
                         <div className="row">
-
                             {topCards.map((card) => (
                                 <div
                                     className="col-lg-6 col-md-6 col-sm-6 col-12 mb-lg-4 mb-4"
                                     key={card.id}
                                 >
-                                    <div className="card">
-                                        <img
-                                            src={card.img}
-                                            alt={card.title}
-                                        />
-
-                                        <div className="card-body">
-                                            <div className="card-body-top">
-                                                <h5>{card.title}</h5>
-
-                                                <p>{card.description}</p>
-                                            </div>
-
-                                            <h6>{card.var}</h6>
-                                        </div>
-                                    </div>
+                                    {renderCard(card)}
                                 </div>
                             ))}
-
                         </div>
                     </div>
                 </div>
 
                 {/* Bottom Cards */}
                 <div className="row">
-
                     {bottomCards.map((card) => (
                         <div
                             className="col-lg-6 col-md-6 col-sm-6 col-12 mb-lg-0 mb-4"
                             key={card.id}
                         >
-                            <div className="card">
-                                <img
-                                    src={card.img}
-                                    alt={card.title}
-                                />
-
-                                <div className="card-body">
-                                    <div className="card-body-top">
-                                        <h5>{card.title}</h5>
-
-                                        <p>{card.description}</p>
-                                    </div>
-
-                                    <h6>{card.var}</h6>
-                                </div>
-                            </div>
+                            {renderCard(card)}
                         </div>
                     ))}
-
                 </div>
 
             </div>

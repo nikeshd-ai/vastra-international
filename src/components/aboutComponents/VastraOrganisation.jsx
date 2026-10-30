@@ -57,7 +57,7 @@ const VastraOrganisation = () => {
                         <div className="organisation-image">
 
                             <img
-                                src="/about/about-organization.jpg"
+                                src="/about/people-working.jpg"
                                 alt="Vastra manufacturing facility"
                             />
 

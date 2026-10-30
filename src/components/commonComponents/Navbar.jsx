@@ -81,7 +81,7 @@ const Navbar = () => {
                             <p>
 
                                 Garment Manufacturer & Exporter | Mumbai, India
-                                | Serving Domestic & Overseas Buyers
+                                | Serving   Overseas & Domestic Buyers
                             </p>
                         </div>
                         <div className="col-lg-6 col-6 d-flex justify-content-lg-end justify-content-center">

@@ -37,7 +37,7 @@ const OurStory = () => {
                                 The Vastra Group was conceived in 2004 in Mumbai, India,
                                 with the sole purpose of covering every aspect of offering
                                 formal wear garments — trousers, jackets, blazers, suits,
-                                vests and skirts — to domestic and overseas markets.
+                                vests and skirts — to overseas and domestic  markets.
                             </p>
 
                             <p>

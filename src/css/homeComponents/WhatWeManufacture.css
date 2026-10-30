@@ -50,3 +50,7 @@
 .card .card-body-top {
     flex: 1;
 }
+
+.manufacture-card-link {
+    text-decoration: none;
+}
