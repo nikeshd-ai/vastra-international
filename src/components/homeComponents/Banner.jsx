@@ -71,7 +71,7 @@ const Banner = () => {
                 </div>
 
             </section>
-            <BannerStrip image="/banner/banner-strip.png" />
+            <BannerStrip image="/products/homePageProducts/Neutral_Elegance_Five-Model_Fashion_Lineup.png" />
         </>
     )
 }

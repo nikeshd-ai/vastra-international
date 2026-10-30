@@ -1,0 +1,4 @@
+# Block direct web access to private configuration and Composer metadata where supported.
+<FilesMatch "^(config\.php|composer\.(json|lock))$">
+    Require all denied
+</FilesMatch>

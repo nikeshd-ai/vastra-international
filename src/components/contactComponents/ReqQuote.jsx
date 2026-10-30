@@ -108,36 +108,22 @@ const ReqQuote = () => {
         try {
             setStatus("sending");
 
-            /*
-             * FOR NOW
-             * This shows the complete data in the browser console.
-             *
-             * Later replace this with your backend/API request.
-             */
+            // PHP backend running through WAMP/Apache.
+            const response = await fetch(
+                "http://localhost/vastra-international/backend/send-quote.php",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formData),
+                }
+            );
+            const result = await response.json();
 
-            console.log("Request Quote Data:", formData);
-
-            /*
-             * Example API request:
-             *
-             * const response = await fetch(
-             *     "YOUR_API_URL_HERE",
-             *     {
-             *         method: "POST",
-             *         headers: {
-             *             "Content-Type": "application/json",
-             *         },
-             *         body: JSON.stringify(formData),
-             *     }
-             * );
-             *
-             * if (!response.ok) {
-             *     throw new Error("Something went wrong");
-             * }
-             */
-
-            // Temporary success
-            await new Promise((resolve) => setTimeout(resolve, 800));
+            if (!response.ok || !result.success) {
+                throw new Error(result.message || "Unable to send your quote request.");
+            }
 
             setStatus("success");
 

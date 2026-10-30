@@ -4,7 +4,7 @@ import "../../css/homeComponents/WhatWeManufacture.css";
 const manufactureCards = [
     {
         id: 1,
-        img: "/what-we-card/whatwecard.png",
+        img: "/products/homePageProducts/formalwear.jpg",
         title: "Formal Wear",
         description:
             "Classic and professional apparel developed for business, formal and institutional requirements, with options across men's and women's wear.",
@@ -13,7 +13,7 @@ const manufactureCards = [
     },
     {
         id: 2,
-        img: "/what-we-card/whatwecard-sec.png",
+        img: "/products/homePageProducts/corporatewear.jpg",
         title: "Corporate Wear",
         description:
             "Professional corporate clothing designed around identity, employee requirements.",
@@ -22,7 +22,7 @@ const manufactureCards = [
     },
     {
         id: 3,
-        img: "/what-we-card/whatwecard-third.png",
+        img: "/products/homePageProducts/uniforms.jpg",
         title: "Uniforms",
         description:
             "Uniform apparel developed for schools and institutional requirements.",
@@ -31,7 +31,7 @@ const manufactureCards = [
     },
     {
         id: 4,
-        img: "/what-we-card/whatwecard-fourth.png",
+        img: "/products/homePageProducts/work-wear.jpg",
         title: "Work Wear",
         description:
             "Practical workwear solutions designed for organisations that need consistent apparel",
@@ -40,7 +40,7 @@ const manufactureCards = [
     },
     {
         id: 5,
-        img: "/what-we-card/whatwecard-fifth.png",
+        img: "/products/homePageProducts/casual.jpg",
         title: "Casual Wear",
         description:
             "Everyday apparel combining practical fabrics, comfortable construction",
