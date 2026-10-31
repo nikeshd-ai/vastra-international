@@ -236,6 +236,16 @@ $labels = [
 try {
     $mail = new \PHPMailer\PHPMailer\PHPMailer(true);
 
+    // TEMPORARY: Local SMTP troubleshooting only.
+// $mail->SMTPDebug = \PHPMailer\PHPMailer\SMTP::DEBUG_SERVER;
+
+// $mail->Debugoutput = function ($message, $level) {
+//     error_log(
+//         'Vastra SMTP Debug [' . $level . ']: ' . $message
+//     );
+//     // print_r('Vastra SMTP Debug [' . $level . ']: ' . $message);
+// };
+
     $mail->isSMTP();
     $mail->Host = $config['smtp_host'];
     $mail->SMTPAuth = true;
@@ -262,6 +272,15 @@ try {
     }
 
     $mail->CharSet = 'UTF-8';
+
+     // LESS SECURE TLS FALLBACK: Disable strict certificate checks
+    $mail->SMTPOptions = [
+        'ssl' => [
+            'verify_peer'       => false,
+            'verify_peer_name'  => false,
+            'allow_self_signed' => true,
+        ]
+    ];
 
     $mail->setFrom(
         $config['from_email'],
